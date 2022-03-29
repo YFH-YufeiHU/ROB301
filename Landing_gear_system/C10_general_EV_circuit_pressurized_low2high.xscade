@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="node" name="C10_general_EV_circuit_pressurized_low2high">
+			<inputs>
+				<Variable name="general_EV">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/fd62/24C0/33D0/624300a63c6a"/>
+					</pragmas>
+				</Variable>
+				<Variable name="circuit_pressurized">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/fd63/24C0/33D0/624300a67d0"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="anomaly">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<default>
+						<ConstValue value="false"/>
+					</default>
+					<pragmas>
+						<ed:Variable oid="!ed/fd61/24C0/33D0/624300a664e3"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="general_EV_changed">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<default>
+						<ConstValue value="false"/>
+					</default>
+					<pragmas>
+						<ed:Variable oid="!ed/fd60/24C0/33D0/624300a63783"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L8">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/fd5d/24C0/33D0/624300a6104f"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L9">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/fd5e/24C0/33D0/624300a63949"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L14">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/fd5f/24C0/33D0/624300a66f86"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- _L8 = general_EV; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L8"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="general_EV"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fd4e/24C0/33D0/624300a6444b"/>
+					</pragmas>
+				</Equation>
+				<!-- _L9 = _L8 <> _L14; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L9"/>
+					</lefts>
+					<right>
+						<!-- _L8 <> _L14 -->
+						<BinaryOp name="1" operator="&lt;&gt;">
+							<operands>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L8"/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L14"/>
+									</path>
+								</IdExpression>
+							</operands>
+						</BinaryOp>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fd4f/24C0/33D0/624300a6337c"/>
+					</pragmas>
+				</Equation>
+				<!-- general_EV_changed = _L9; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="general_EV_changed"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L9"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fd50/24C0/33D0/624300a617b0"/>
+					</pragmas>
+				</Equation>
+				<StateMachine name="SM1">
+					<states>
+						<State initial="true" name="Normal">
+							<unless>
+								<Transition kind="restart">
+									<target>
+										<StateRef name="Detection"/>
+									</target>
+									<condition>
+										<!-- general_EV and general_EV_changed -->
+										<NAryOp name="1" operator="and">
+											<operands>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="general_EV"/>
+													</path>
+												</IdExpression>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="general_EV_changed"/>
+													</path>
+												</IdExpression>
+											</operands>
+										</NAryOp>
+									</condition>
+									<pragmas>
+										<ed:Transition oid="!ed/fd53/24C0/33D0/624300a65c16"/>
+									</pragmas>
+								</Transition>
+							</unless>
+							<pragmas>
+								<ed:State oid="!ed/fd52/24C0/33D0/624300a6501a"/>
+							</pragmas>
+						</State>
+						<State name="Detection">
+							<unless>
+								<Transition kind="restart">
+									<target>
+										<StateRef name="Normal"/>
+									</target>
+									<condition>
+										<!-- circuit_pressurized = true -->
+										<BinaryOp name="1" operator="=">
+											<operands>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="circuit_pressurized"/>
+													</path>
+												</IdExpression>
+												<ConstValue value="true"/>
+											</operands>
+										</BinaryOp>
+									</condition>
+									<pragmas>
+										<ed:Transition oid="!ed/fd55/24C0/33D0/624300a657e4"/>
+									</pragmas>
+								</Transition>
+								<Transition kind="restart">
+									<target>
+										<StateRef name="Failure"/>
+									</target>
+									<condition>
+										<!-- 10 times true -->
+										<BinaryOp name="2" operator="times">
+											<operands>
+												<ConstValue value="10"/>
+												<ConstValue value="true"/>
+											</operands>
+										</BinaryOp>
+									</condition>
+									<pragmas>
+										<ed:Transition oid="!ed/fd56/24C0/33D0/624300a628e1"/>
+									</pragmas>
+								</Transition>
+							</unless>
+							<pragmas>
+								<ed:State oid="!ed/fd54/24C0/33D0/624300a63d0a"/>
+							</pragmas>
+						</State>
+						<State name="Failure">
+							<locals>
+								<Variable name="_L1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Variable oid="!ed/fd5a/24C0/33D0/624300a64081"/>
+									</pragmas>
+								</Variable>
+							</locals>
+							<data>
+								<!-- _L1 = true; -->
+								<Equation>
+									<lefts>
+										<VariableRef name="_L1"/>
+									</lefts>
+									<right>
+										<ConstValue value="true"/>
+									</right>
+									<pragmas>
+										<ed:Equation oid="!ed/fd58/24C0/33D0/624300a64678"/>
+									</pragmas>
+								</Equation>
+								<!-- anomaly = _L1; -->
+								<Equation>
+									<lefts>
+										<VariableRef name="anomaly"/>
+									</lefts>
+									<right>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L1"/>
+											</path>
+										</IdExpression>
+									</right>
+									<pragmas>
+										<ed:Equation oid="!ed/fd59/24C0/33D0/624300a63b5a"/>
+									</pragmas>
+								</Equation>
+							</data>
+							<pragmas>
+								<ed:State oid="!ed/fd57/24C0/33D0/624300a6139"/>
+							</pragmas>
+						</State>
+					</states>
+					<pragmas>
+						<ed:StateMachine oid="!ed/fd51/24C0/33D0/624300a62f2d"/>
+					</pragmas>
+				</StateMachine>
+				<!-- _L14 = fby(_L8; 1; false); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L14"/>
+					</lefts>
+					<right>
+						<!-- fby(_L8; 1; false) -->
+						<FbyOp name="1">
+							<flows>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L8"/>
+									</path>
+								</IdExpression>
+							</flows>
+							<delay>
+								<ConstValue value="1"/>
+							</delay>
+							<values>
+								<ConstValue value="false"/>
+							</values>
+						</FbyOp>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fd5b/24C0/33D0/624300a63092"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/fd4d/24C0/33D0/624300a6794f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+					<comment>This operator deals with the case where the signal general_EV and circuit pressurized sensors information are given. We need this operator to judge where the corrsponding sensors are work.(Low to high)</comment>
+					<diagrams>
+						<NetDiagram name="C10_general_EV_circuit_pressurized_low2high" landscape="true" format="A4 (210 297)" oid="!ed/fd5c/24C0/33D0/624300a620fe">
+							<presentationElements>
+								<EquationGE presentable="!ed/fd4e/24C0/33D0/624300a6444b">
+									<position>
+										<Point x="4313" y="6694"/>
+									</position>
+									<size>
+										<Size width="264" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/fd4f/24C0/33D0/624300a6337c">
+									<position>
+										<Point x="7038" y="6747"/>
+									</position>
+									<size>
+										<Size width="1005" height="661"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fd4e/24C0/33D0/624300a6444b" dstEquation="!ed/fd4f/24C0/33D0/624300a6337c">
+									<positions>
+										<Point x="4577" y="6959"/>
+										<Point x="5794" y="6959"/>
+										<Point x="5794" y="6959"/>
+										<Point x="7038" y="6959"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/fd50/24C0/33D0/624300a617b0">
+									<position>
+										<Point x="11165" y="6826"/>
+									</position>
+									<size>
+										<Size width="318" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fd4f/24C0/33D0/624300a6337c" dstEquation="!ed/fd50/24C0/33D0/624300a617b0">
+									<positions>
+										<Point x="8043" y="7091"/>
+										<Point x="9631" y="7091"/>
+										<Point x="9631" y="7091"/>
+										<Point x="11165" y="7091"/>
+									</positions>
+								</Edge>
+								<StateMachineGE presentable="!ed/fd51/24C0/33D0/624300a62f2d">
+									<position>
+										<Point x="3334" y="9657"/>
+									</position>
+									<size>
+										<Size width="23442" height="4128"/>
+									</size>
+								</StateMachineGE>
+								<StateGE presentable="!ed/fd52/24C0/33D0/624300a6501a">
+									<position>
+										<Point x="3678" y="9869"/>
+									</position>
+									<size>
+										<Size width="4710" height="3598"/>
+									</size>
+								</StateGE>
+								<StateGE presentable="!ed/fd54/24C0/33D0/624300a63d0a">
+									<position>
+										<Point x="12144" y="9869"/>
+									</position>
+									<size>
+										<Size width="4710" height="3598"/>
+									</size>
+								</StateGE>
+								<StateGE presentable="!ed/fd57/24C0/33D0/624300a6139">
+									<position>
+										<Point x="20241" y="9948"/>
+									</position>
+									<size>
+										<Size width="4710" height="3598"/>
+									</size>
+								</StateGE>
+								<TransitionGE presentable="!ed/fd53/24C0/33D0/624300a65c16">
+									<textAreas>
+										<TextArea text="general_EV and general_EV_changed&#xA;
+             " role="130"/>
+									</textAreas>
+									<positions>
+										<Point x="8387" y="11589"/>
+										<Point x="9631" y="11589"/>
+										<Point x="10874" y="11589"/>
+										<Point x="12144" y="11562"/>
+									</positions>
+									<labelSize>
+										<Size width="5477" height="370"/>
+									</labelSize>
+									<labelPos>
+										<Point x="5662" y="11192"/>
+									</labelPos>
+									<slashPos>
+										<Point x="10345" y="11192"/>
+									</slashPos>
+								</TransitionGE>
+								<TransitionGE presentable="!ed/fd55/24C0/33D0/624300a657e4">
+									<textAreas>
+										<TextArea text="circuit_pressurized=true&#xA;
+  &#xA;
+     &#xA;
+      &#xA;
+             &#xA;
+             " role="130"/>
+									</textAreas>
+									<positions>
+										<Point x="12144" y="12277"/>
+										<Point x="10901" y="12277"/>
+										<Point x="9657" y="12277"/>
+										<Point x="8387" y="12224"/>
+									</positions>
+									<labelSize>
+										<Size width="5477" height="370"/>
+									</labelSize>
+									<labelPos>
+										<Point x="5477" y="12277"/>
+									</labelPos>
+									<slashPos>
+										<Point x="10160" y="12277"/>
+									</slashPos>
+								</TransitionGE>
+								<TransitionGE presentable="!ed/fd56/24C0/33D0/624300a628e1">
+									<textAreas>
+										<TextArea text="10 times true&#xA;
+             " role="130"/>
+									</textAreas>
+									<positions>
+										<Point x="16854" y="11774"/>
+										<Point x="17965" y="11774"/>
+										<Point x="19076" y="11774"/>
+										<Point x="20241" y="11774"/>
+									</positions>
+									<labelSize>
+										<Size width="4815" height="370"/>
+									</labelSize>
+									<labelPos>
+										<Point x="16377" y="11010"/>
+									</labelPos>
+									<slashPos>
+										<Point x="20399" y="11007"/>
+									</slashPos>
+								</TransitionGE>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/fd58/24C0/33D0/624300a64678">
+									<position>
+										<Point x="21537" y="11827"/>
+									</position>
+									<size>
+										<Size width="212" height="318"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/fd5b/24C0/33D0/624300a63092">
+									<position>
+										<Point x="5239" y="7541"/>
+									</position>
+									<size>
+										<Size width="1005" height="1005"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fd4e/24C0/33D0/624300a6444b" dstEquation="!ed/fd5b/24C0/33D0/624300a63092">
+									<positions>
+										<Point x="4577" y="6959"/>
+										<Point x="4895" y="6959"/>
+										<Point x="4895" y="8043"/>
+										<Point x="5239" y="8043"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/fd5b/24C0/33D0/624300a63092" dstEquation="!ed/fd4f/24C0/33D0/624300a6337c">
+									<positions>
+										<Point x="6244" y="8043"/>
+										<Point x="6641" y="8043"/>
+										<Point x="6641" y="7197"/>
+										<Point x="7038" y="7197"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/fd59/24C0/33D0/624300a63b5a">
+									<position>
+										<Point x="22728" y="11748"/>
+									</position>
+									<size>
+										<Size width="318" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fd58/24C0/33D0/624300a64678" dstEquation="!ed/fd59/24C0/33D0/624300a63b5a">
+									<positions>
+										<Point x="21749" y="11986"/>
+										<Point x="22304" y="11986"/>
+										<Point x="22304" y="11986"/>
+										<Point x="22781" y="11986"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

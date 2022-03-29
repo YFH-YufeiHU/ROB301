@@ -1,0 +1,16 @@
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** Command: kcg662.exe -config C:/Users/yufei/Desktop/ensta2022/Cours_ROB2021_2022_HU/ROB301/Landing_gear_system/Simulation/config.txt
+** Generation date: 2022-03-29T22:03:03
+*************************************************************$
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/Users/yufei/Desktop/ensta2022/Cours_ROB2021_2022_HU/ROB301/Landing_gear_system/Simulation/scade_model_without_unused.scade, line 269, character 0
+  at path C2_open_EV_sensors_door_opened/
+ Interface element C2_open_EV_sensors_door_opened has been renamed because it is
+ too long
+1 warning was found
+No error was found
+No failure occurred
+$********** SCADE Suite KCG 32-bit 6.6.2 (build i4) **********
+** kcg.log
+** Generation date: 2022-03-29T22:03:03
+*************************************************************$

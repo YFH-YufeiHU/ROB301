@@ -1,0 +1,2854 @@
+<HTML>
+<HEAD>
+<TITLE>Landing_gear_system</TITLE>
+<STYLE type="text/css">
+.Normal { 
+font-family: Verdana;
+font-size: 11pt;}
+.BodyText { 
+font-family: Verdana;
+font-size: 11pt;}
+.Title { 
+text-align: center;
+font-family: Verdana;
+font-size: 20pt;
+font-weight: bold;
+padding-bottom: 16pt;}
+.Subtitle { 
+text-align: center;
+font-family: Verdana;
+font-size: 16pt;
+font-style: italic;
+padding-bottom: 16pt;}
+.DocumentInfo { 
+font-family: Verdana;
+font-size: 11pt;}
+.ListNumber2 { 
+font-family: Verdana;
+font-size: 11pt;}
+.Heading1 { 
+margin-top: 12pt;
+border-top-style: dotted;page-break-before: always;
+font-family: Verdana;
+font-size: 16pt;
+font-weight: bold;
+padding-top: 12pt;
+padding-bottom: 12pt;}
+.Heading2 { 
+font-family: Verdana;
+font-size: 14pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.Heading3 { 
+font-family: Verdana;
+font-size: 12pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.Heading4 { 
+font-family: Verdana;
+font-size: 11pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.TableCell { 
+text-align: left;
+vertical-align:middle;
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 0.1cm;
+padding-right: 0.1cm;}
+.TableHeadingCell { 
+text-align: left;
+vertical-align:middle;
+color: rgb(255,255,255);
+background-color: rgb(0,0,128);
+font-family: Verdana;
+font-size: 9pt;
+font-weight: bold;
+padding-left: 0.1cm;}
+.TOC1 { 
+font-family: Verdana;
+font-size: 12pt;
+font-weight: bold;
+padding-top: 12pt;}
+.TOC2 { 
+font-family: Verdana;
+font-size: 12pt;
+padding-left: 0.35cm;
+padding-top: 12pt;}
+.TOC3 { 
+font-family: Verdana;
+font-size: 11pt;
+font-style: italic;
+padding-left: 0.7cm;
+padding-top: 6pt;}
+.TOC4 { 
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 1cm;}
+.Header { 
+font-family: Tahoma;
+font-size: 9pt;
+font-weight: bold;}
+.Footer { 
+font-family: Tahoma;
+font-size: 9pt;
+font-weight: bold;}
+.Caption { 
+text-align: center;
+font-family: Verdana;
+font-size: 8pt;
+font-weight: bold;
+padding-top: 6pt;
+padding-bottom: 12pt;}
+.TableCaption { 
+text-align: left;
+font-family: Verdana;
+font-size: 8pt;
+font-weight: bold;
+padding-bottom: 6pt;}
+.ListOfFigures { 
+font-family: Verdana;
+font-size: 11pt;
+font-weight: bold;}
+.Hyperlink { 
+color: rgb(0,0,255);
+font-family: Verdana;
+font-size: 11pt;
+text-decoration: underline;}
+.DocumentClass { 
+text-align: center;
+font-family: Verdana;
+font-size: 11pt;}
+.TableCellAnnot { 
+text-align: left;
+vertical-align:middle;
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 0.1cm;
+padding-right: 0.1cm;}
+.TableHeadingCellAnnot { 
+text-align: left;
+vertical-align:middle;
+color: rgb(255,255,255);
+background-color: rgb(0,0,128);
+font-family: Verdana;
+font-size: 9pt;
+font-weight: bold;
+padding-left: 0.1cm;}
+.TextualCode { 
+font-family: Courier;
+font-size: 9pt;
+margin-bottom: 12pt;
+border-style: solid;
+border-width: 1pt;
+padding-left: 3pt;
+padding-top: 3pt;
+padding-bottom: 3pt;
+padding-right: 3pt;
+min-width: 160mm;
+width: 80%;
+white-space: nowrap;}
+.EndOfDocument { 
+text-align: center;
+color: rgb(192,192,192);
+font-family: Verdana;
+font-size: 7pt;}
+.ListTitle { 
+font-family: Verdana;
+font-size: 8pt;
+font-weight: bold;}
+.ListOfTables { 
+font-family: Verdana;
+font-size: 11pt;
+font-weight: bold;}
+.Heading5 { 
+font-family: Verdana;
+font-size: 10pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.Heading6 { 
+font-family: Verdana;
+font-size: 10pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.Heading7 { 
+font-family: Verdana;
+font-size: 10pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.TOC5 { 
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 1.3cm;}
+.TOC6 { 
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 1.6cm;}
+.TOC7 { 
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 2cm;}
+table{
+border:1px solid rgb(0, 0, 0);
+border-spacing: 0px;
+border-collapse: collapse;
+}
+td{
+border:1px solid rgb(0, 0, 0);
+border-collapse: collapse;
+ min-height: 0.5cm;
+height: 0.5cm;
+}
+th{
+border:1px solid rgb(0, 0, 0);
+border-collapse: collapse;
+ min-height: 0.5cm;
+height: 0.5cm;
+}
+</STYLE>
+</HEAD>
+<BODY>
+
+<DIV class="DocumentClass"></DIV><DIV class="Title">&lt;Landing gear system&gt;</DIV>
+<DIV class="Subtitle">&lt;ROB301&gt;</DIV>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<DIV class="DocumentInfo">
+<B>Summary:</B></DIV>
+<DIV style="height:35mm;"><DIV class="DocumentInfo">
+&lt;This document describes the landing system for aircraft. It implements the software part of a landing gear system.&gt;</DIV>
+</DIV>
+<DIV class="DocumentInfo">
+<B>Company: </B>&lt;ENSTA&gt;<BR>
+<B>Authors: </B>&lt;Yufei HU and Yu Wang&gt;<BR>
+<B>Reference: </B>&lt;landing_system.pdf&gt;<BR>
+<B>Index: </B>&lt;0&gt;<BR>
+<B>Date: </B>&lt;29/03/2022&gt;</DIV>
+<DIV class="DocumentInfo"></DIV><DIV class="DocumentInfo"></DIV><DIV class="DocumentInfo"></DIV><DIV class="DocumentInfo"></DIV><DIV class="DocumentInfo"></DIV>
+<DIV class="Title" style="margin-top: 12pt; border-top-style: dotted;page-break-before: always; padding-top: 12pt;">Table Of Contents</DIV>
+<DIV class="TOC1">1. <A HREF="#_TOC0">General Project Description</A></DIV>
+<DIV class="TOC1">2. <A HREF="#_TOC1">Software Architecture</A></DIV>
+<DIV class="TOC2">2.1. <A HREF="#_TOC2">Project Architecture</A></DIV>
+<DIV class="TOC2">2.2. <A HREF="#_TOC3">Call Graph</A></DIV>
+<DIV class="TOC1">3. <A HREF="#_TOC4">Landing_gear_system Project</A></DIV>
+<DIV class="TOC2">3.1. <A HREF="#_TOC5">Root Elements</A></DIV>
+<DIV class="TOC3">3.1.1. <A HREF="#_TOC6">C10_general_EV_circuit_pressurized_low2high Operator</A></DIV>
+<DIV class="TOC4">3.1.1.1. <A HREF="#_TOC7">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.1.2. <A HREF="#_TOC8">Interface</A></DIV>
+<DIV class="TOC4">3.1.1.3. <A HREF="#_TOC9">Locals</A></DIV>
+<DIV class="TOC4">3.1.1.4. <A HREF="#_TOC10">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.1.5. <A HREF="#_TOC11">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.2. <A HREF="#_TOC13">C1_open_EV_sensors_door_closed Operator</A></DIV>
+<DIV class="TOC4">3.1.2.1. <A HREF="#_TOC14">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.2.2. <A HREF="#_TOC15">Interface</A></DIV>
+<DIV class="TOC4">3.1.2.3. <A HREF="#_TOC16">Locals</A></DIV>
+<DIV class="TOC4">3.1.2.4. <A HREF="#_TOC17">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.2.5. <A HREF="#_TOC18">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.3. <A HREF="#_TOC20">C2_open_EV_sensors_door_opened Operator</A></DIV>
+<DIV class="TOC4">3.1.3.1. <A HREF="#_TOC21">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.3.2. <A HREF="#_TOC22">Interface</A></DIV>
+<DIV class="TOC4">3.1.3.3. <A HREF="#_TOC23">Locals</A></DIV>
+<DIV class="TOC4">3.1.3.4. <A HREF="#_TOC24">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.3.5. <A HREF="#_TOC25">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.4. <A HREF="#_TOC27">C3_close_EV_sensors_door_closed Operator</A></DIV>
+<DIV class="TOC4">3.1.4.1. <A HREF="#_TOC28">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.4.2. <A HREF="#_TOC29">Interface</A></DIV>
+<DIV class="TOC4">3.1.4.3. <A HREF="#_TOC30">Locals</A></DIV>
+<DIV class="TOC4">3.1.4.4. <A HREF="#_TOC31">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.4.5. <A HREF="#_TOC32">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.5. <A HREF="#_TOC34">C4_close_EV_sensors_door_opened Operator</A></DIV>
+<DIV class="TOC4">3.1.5.1. <A HREF="#_TOC35">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.5.2. <A HREF="#_TOC36">Interface</A></DIV>
+<DIV class="TOC4">3.1.5.3. <A HREF="#_TOC37">Locals</A></DIV>
+<DIV class="TOC4">3.1.5.4. <A HREF="#_TOC38">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.5.5. <A HREF="#_TOC39">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.6. <A HREF="#_TOC41">C5_extend_EV_sensors_gear_retracted Operator</A></DIV>
+<DIV class="TOC4">3.1.6.1. <A HREF="#_TOC42">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.6.2. <A HREF="#_TOC43">Interface</A></DIV>
+<DIV class="TOC4">3.1.6.3. <A HREF="#_TOC44">Locals</A></DIV>
+<DIV class="TOC4">3.1.6.4. <A HREF="#_TOC45">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.6.5. <A HREF="#_TOC46">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.7. <A HREF="#_TOC48">C6_extend_EV_sensors_gear_extended Operator</A></DIV>
+<DIV class="TOC4">3.1.7.1. <A HREF="#_TOC49">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.7.2. <A HREF="#_TOC50">Interface</A></DIV>
+<DIV class="TOC4">3.1.7.3. <A HREF="#_TOC51">Locals</A></DIV>
+<DIV class="TOC4">3.1.7.4. <A HREF="#_TOC52">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.7.5. <A HREF="#_TOC53">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.8. <A HREF="#_TOC55">C7_retract_EV_sensors_gear_retracted Operator</A></DIV>
+<DIV class="TOC4">3.1.8.1. <A HREF="#_TOC56">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.8.2. <A HREF="#_TOC57">Interface</A></DIV>
+<DIV class="TOC4">3.1.8.3. <A HREF="#_TOC58">Locals</A></DIV>
+<DIV class="TOC4">3.1.8.4. <A HREF="#_TOC59">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.8.5. <A HREF="#_TOC60">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.9. <A HREF="#_TOC62">C8_retract_EV_sensors_gear_extended Operator</A></DIV>
+<DIV class="TOC4">3.1.9.1. <A HREF="#_TOC63">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.9.2. <A HREF="#_TOC64">Interface</A></DIV>
+<DIV class="TOC4">3.1.9.3. <A HREF="#_TOC65">Locals</A></DIV>
+<DIV class="TOC4">3.1.9.4. <A HREF="#_TOC66">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.9.5. <A HREF="#_TOC67">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.10. <A HREF="#_TOC69">C9_general_EV_circuit_pressurized_high2low Operator</A></DIV>
+<DIV class="TOC4">3.1.10.1. <A HREF="#_TOC70">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.10.2. <A HREF="#_TOC71">Interface</A></DIV>
+<DIV class="TOC4">3.1.10.3. <A HREF="#_TOC72">Locals</A></DIV>
+<DIV class="TOC4">3.1.10.4. <A HREF="#_TOC73">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.10.5. <A HREF="#_TOC74">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.11. <A HREF="#_TOC76">Compute_logical Operator</A></DIV>
+<DIV class="TOC4">3.1.11.1. <A HREF="#_TOC77">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.11.2. <A HREF="#_TOC78">Interface</A></DIV>
+<DIV class="TOC4">3.1.11.3. <A HREF="#_TOC79">Locals</A></DIV>
+<DIV class="TOC4">3.1.11.4. <A HREF="#_TOC80">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.11.5. <A HREF="#_TOC81">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.12. <A HREF="#_TOC83">Handle_control Operator</A></DIV>
+<DIV class="TOC4">3.1.12.1. <A HREF="#_TOC84">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.12.2. <A HREF="#_TOC85">Interface</A></DIV>
+<DIV class="TOC4">3.1.12.3. <A HREF="#_TOC86">Locals</A></DIV>
+<DIV class="TOC4">3.1.12.4. <A HREF="#_TOC87">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.12.5. <A HREF="#_TOC88">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.13. <A HREF="#_TOC90">Monitor_system Operator</A></DIV>
+<DIV class="TOC4">3.1.13.1. <A HREF="#_TOC91">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.13.2. <A HREF="#_TOC92">Interface</A></DIV>
+<DIV class="TOC4">3.1.13.3. <A HREF="#_TOC93">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.13.4. <A HREF="#_TOC94">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.14. <A HREF="#_TOC96">Sensor_voter_system Operator</A></DIV>
+<DIV class="TOC4">3.1.14.1. <A HREF="#_TOC97">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.14.2. <A HREF="#_TOC98">Interface</A></DIV>
+<DIV class="TOC4">3.1.14.3. <A HREF="#_TOC99">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.14.4. <A HREF="#_TOC100">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.15. <A HREF="#_TOC102">System Operator</A></DIV>
+<DIV class="TOC4">3.1.15.1. <A HREF="#_TOC103">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.15.2. <A HREF="#_TOC104">Interface</A></DIV>
+<DIV class="TOC4">3.1.15.3. <A HREF="#_TOC105">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.15.4. <A HREF="#_TOC106">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.16. <A HREF="#_TOC108">Voter Operator</A></DIV>
+<DIV class="TOC4">3.1.16.1. <A HREF="#_TOC109">Comments and Information</A></DIV>
+<DIV class="TOC4">3.1.16.2. <A HREF="#_TOC110">Interface</A></DIV>
+<DIV class="TOC4">3.1.16.3. <A HREF="#_TOC111">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.16.4. <A HREF="#_TOC112">Graphical and Textual Diagrams</A></DIV>
+
+<DIV class="Title" style="margin-top: 12pt; border-top-style: dotted;page-break-before: always; padding-top: 12pt;">List Of Figures</DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE1">Figure 1: View of C10_general_EV_circuit_pressurized_low2high (C10_general_EV_circuit_pressurized_low2high)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE2">Figure 2: View of C1_open_EV_sensors_door_closed (C1_open_EV_sensors_door_closed)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE3">Figure 3: View of C2_open_EV_sensors_door_opened (C2_open_EV_sensors_door_opened)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE4">Figure 4: View of C3_close_EV_sensors_door_closed (C3_close_EV_sensors_door_closed)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE5">Figure 5: View of C4_close_EV_sensors_door_opened (C4_close_EV_sensors_door_opened)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE6">Figure 6: View of C5_extend_EV_sensors_gear_retracted (C5_extend_EV_sensors_gear_retracted)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE7">Figure 7: View of C6_extend_EV_sensors_gear_extended (C6_extend_EV_sensors_gear_extended)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE8">Figure 8: View of C7_retract_EV_sensors_gear_retracted (C7_retract_EV_sensors_gear_retracted)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE9">Figure 9: View of C8_retract_EV_sensors_gear_extended (C8_retract_EV_sensors_gear_extended)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE10">Figure 10: View of C9_general_EV_circuit_pressurized_high2low (C9_general_EV_circuit_pressurized_high2low)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE11">Figure 11: View of Compute_logical_1 (Compute_logical)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE12">Figure 12: View of Handle_control (Handle_control)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE13">Figure 13: View of Monitor_system_1 (Monitor_system)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE14">Figure 14: View of Sensor_voter_system_1 (Sensor_voter_system)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE15">Figure 15: View of System_1 (System)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE16">Figure 16: View of Voter_1 (Voter)</A></DIV>
+
+<DIV class="Title" style="margin-top: 12pt; border-top-style: dotted;page-break-before: always; padding-top: 12pt;">List Of Tables</DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE1">Table 1: Inputs of C10_general_EV_circuit_pressurized_low2high</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE2">Table 2: Outputs of C10_general_EV_circuit_pressurized_low2high</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE3">Table 3: Locals of C10_general_EV_circuit_pressurized_low2high</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE4">Table 4: State Machines of C10_general_EV_circuit_pressurized_low2high</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE5">Table 5: States of C10_general_EV_circuit_pressurized_low2high</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE6">Table 6: Transitions of C10_general_EV_circuit_pressurized_low2high</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE7">Table 7: Inputs of C1_open_EV_sensors_door_closed</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE8">Table 8: Outputs of C1_open_EV_sensors_door_closed</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE9">Table 9: Locals of C1_open_EV_sensors_door_closed</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE10">Table 10: State Machines of C1_open_EV_sensors_door_closed</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE11">Table 11: States of C1_open_EV_sensors_door_closed</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE12">Table 12: Transitions of C1_open_EV_sensors_door_closed</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE13">Table 13: Inputs of C2_open_EV_sensors_door_opened</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE14">Table 14: Outputs of C2_open_EV_sensors_door_opened</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE15">Table 15: Locals of C2_open_EV_sensors_door_opened</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE16">Table 16: State Machines of C2_open_EV_sensors_door_opened</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE17">Table 17: States of C2_open_EV_sensors_door_opened</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE18">Table 18: Transitions of C2_open_EV_sensors_door_opened</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE19">Table 19: Inputs of C3_close_EV_sensors_door_closed</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE20">Table 20: Outputs of C3_close_EV_sensors_door_closed</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE21">Table 21: Locals of C3_close_EV_sensors_door_closed</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE22">Table 22: State Machines of C3_close_EV_sensors_door_closed</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE23">Table 23: States of C3_close_EV_sensors_door_closed</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE24">Table 24: Transitions of C3_close_EV_sensors_door_closed</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE25">Table 25: Inputs of C4_close_EV_sensors_door_opened</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE26">Table 26: Outputs of C4_close_EV_sensors_door_opened</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE27">Table 27: Locals of C4_close_EV_sensors_door_opened</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE28">Table 28: State Machines of C4_close_EV_sensors_door_opened</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE29">Table 29: States of C4_close_EV_sensors_door_opened</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE30">Table 30: Transitions of C4_close_EV_sensors_door_opened</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE31">Table 31: Inputs of C5_extend_EV_sensors_gear_retracted</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE32">Table 32: Outputs of C5_extend_EV_sensors_gear_retracted</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE33">Table 33: Locals of C5_extend_EV_sensors_gear_retracted</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE34">Table 34: State Machines of C5_extend_EV_sensors_gear_retracted</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE35">Table 35: States of C5_extend_EV_sensors_gear_retracted</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE36">Table 36: Transitions of C5_extend_EV_sensors_gear_retracted</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE37">Table 37: Inputs of C6_extend_EV_sensors_gear_extended</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE38">Table 38: Outputs of C6_extend_EV_sensors_gear_extended</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE39">Table 39: Locals of C6_extend_EV_sensors_gear_extended</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE40">Table 40: State Machines of C6_extend_EV_sensors_gear_extended</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE41">Table 41: States of C6_extend_EV_sensors_gear_extended</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE42">Table 42: Transitions of C6_extend_EV_sensors_gear_extended</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE43">Table 43: Inputs of C7_retract_EV_sensors_gear_retracted</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE44">Table 44: Outputs of C7_retract_EV_sensors_gear_retracted</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE45">Table 45: Locals of C7_retract_EV_sensors_gear_retracted</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE46">Table 46: State Machines of C7_retract_EV_sensors_gear_retracted</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE47">Table 47: States of C7_retract_EV_sensors_gear_retracted</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE48">Table 48: Transitions of C7_retract_EV_sensors_gear_retracted</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE49">Table 49: Inputs of C8_retract_EV_sensors_gear_extended</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE50">Table 50: Outputs of C8_retract_EV_sensors_gear_extended</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE51">Table 51: Locals of C8_retract_EV_sensors_gear_extended</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE52">Table 52: State Machines of C8_retract_EV_sensors_gear_extended</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE53">Table 53: States of C8_retract_EV_sensors_gear_extended</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE54">Table 54: Transitions of C8_retract_EV_sensors_gear_extended</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE55">Table 55: Inputs of C9_general_EV_circuit_pressurized_high2low</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE56">Table 56: Outputs of C9_general_EV_circuit_pressurized_high2low</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE57">Table 57: Locals of C9_general_EV_circuit_pressurized_high2low</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE58">Table 58: State Machines of C9_general_EV_circuit_pressurized_high2low</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE59">Table 59: States of C9_general_EV_circuit_pressurized_high2low</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE60">Table 60: Transitions of C9_general_EV_circuit_pressurized_high2low</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE61">Table 61: Inputs of Compute_logical</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE62">Table 62: Outputs of Compute_logical</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE63">Table 63: Locals of Compute_logical</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE64">Table 64: State Machines of Compute_logical_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE65">Table 65: States of Compute_logical_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE66">Table 66: Transitions of Compute_logical_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE67">Table 67: Inputs of Handle_control</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE68">Table 68: Outputs of Handle_control</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE69">Table 69: Locals of Handle_control</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE70">Table 70: State Machines of Handle_control</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE71">Table 71: States of Handle_control</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE72">Table 72: Transitions of Handle_control</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE73">Table 73: Inputs of Monitor_system</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE74">Table 74: Outputs of Monitor_system</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE75">Table 75: Inputs of Sensor_voter_system</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE76">Table 76: Outputs of Sensor_voter_system</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE77">Table 77: Inputs of System</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE78">Table 78: Outputs of System</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE79">Table 79: Inputs of Voter</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE80">Table 80: Outputs of Voter</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE81">Table 81: State Machines of Voter_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE82">Table 82: States of Voter_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE83">Table 83: Transitions of Voter_1</A></DIV>
+
+<DIV class="Heading1">1. <A NAME="_TOC0">General Project Description</A></DIV>
+<DIV class="BodyText">This document describes the landing system for aircraft. It implements the software part of a landing gear system.<BR>
+<BR>
+The entire system is described in the operator "System". The flow of the system can be briefly described as follows: all sensors get the status of each position via the operator "Sensor_voter_system" (voting system), the operator "Computer_logical" gives the corresponding electric valve commands via the information given to the sensors, and the operator "Monitor_monitor" gives the corresponding electric valve (EV) commands. The operator "Computer_logical" gives the corresponding electric valve commands from the information given to the sensors, and the operator "Monitor_system" displays the corresponding sensor information to the pilot.<BR>
+<BR>
+In addition, we need to clarify some rules.<BR>
+(1) The unit for all durations is 1s.<BR>
+(2) A handle of "true" means that the handle is in the "up" position. A handle of "false" means that the handle is in the "down" position.<BR>
+(3) A switch of "true" means the switch is in the "open" position, a switch of "false" means the switch is in the "close" position</DIV>
+<DIV class="Heading1">2. <A NAME="_TOC1">Software Architecture</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<DIV class="Heading2">2.1. <A NAME="_TOC2">Project Architecture</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">This section displays the package hierarchy of projects.</DIV>Project <A class="Hyperlink" HREF="#LinkM-Landing_gear_system">Landing_gear_system</A>
+</DIV>
+
+<DIV class="Heading2">2.2. <A NAME="_TOC3">Call Graph</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">This Call Graph displays the dependency tree of model operators.</DIV><DIV class="BodyText" style="padding-bottom: 12pt;">
+1. <A class="Hyperlink" HREF="#LinkS-!ed/ff61/24C0/33D0/62430b627951">System</A>
+<BR>
+ &nbsp; &nbsp; 1.1. <A class="Hyperlink" HREF="#LinkS-!ed/9e3ba/961/2CBC/6241b9481386">Compute_logical</A> [2]
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.1.1. <A class="Hyperlink" HREF="#LinkS-!ed/61ffc/961/2CBC/62385a317d6f">Handle_control</A>
+<BR>
+ &nbsp; &nbsp; 1.2. <A class="Hyperlink" HREF="#LinkS-!ed/fd9d/24C0/33D0/624301de18f6">Monitor_system</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.2.1. <A class="Hyperlink" HREF="#LinkS-!ed/fd4d/24C0/33D0/624300a6794f">C10_general_EV_circuit_pressurized_low2high</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.2.2. <A class="Hyperlink" HREF="#LinkS-!ed/1c9fd/961/2CBC/622f21181607">C1_open_EV_sensors_door_closed</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.2.3. <A class="Hyperlink" HREF="#LinkS-!ed/a4e2/24C0/33D0/6242f51149b6">C2_open_EV_sensors_door_opened</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.2.4. <A class="Hyperlink" HREF="#LinkS-!ed/a5b2/24C0/33D0/6242f63c1dab">C3_close_EV_sensors_door_closed</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.2.5. <A class="Hyperlink" HREF="#LinkS-!ed/a6a7/24C0/33D0/6242f7617c8b">C4_close_EV_sensors_door_opened</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.2.6. <A class="Hyperlink" HREF="#LinkS-!ed/a771/24C0/33D0/6242f8631037">C5_extend_EV_sensors_gear_retracted</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.2.7. <A class="Hyperlink" HREF="#LinkS-!ed/f9e8/24C0/33D0/6242fba2723a">C6_extend_EV_sensors_gear_extended</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.2.8. <A class="Hyperlink" HREF="#LinkS-!ed/fab3/24C0/33D0/6242fc28eb0">C7_retract_EV_sensors_gear_retracted</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.2.9. <A class="Hyperlink" HREF="#LinkS-!ed/fb7b/24C0/33D0/6242fc9f15db">C8_retract_EV_sensors_gear_extended</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.2.10. <A class="Hyperlink" HREF="#LinkS-!ed/fc69/24C0/33D0/6242ff575abf">C9_general_EV_circuit_pressurized_high2low</A>
+<BR>
+ &nbsp; &nbsp; 1.3. <A class="Hyperlink" HREF="#LinkS-!ed/56b7/5811/1514/6242c94e2c9b">Sensor_voter_system</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.3.1. <A class="Hyperlink" HREF="#LinkS-!ed/525f/5811/1514/6242be451388">Voter</A> [17]</DIV>
+<A NAME='LinkM-Landing_gear_system'></A><DIV class="Heading1">3. <A NAME="_TOC4">Landing_gear_system Project</A></DIV>
+<DIV class="Heading2">3.1. <A NAME="_TOC5">Root Elements</A></DIV>
+
+
+<A NAME='LinkS-!ed/fd4d/24C0/33D0/624300a6794f'></A><DIV class="Heading3">3.1.1. <A NAME="_TOC6">C10_general_EV_circuit_pressurized_low2high Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.1.1.   <A NAME="_TOC7">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+C10_general_EV_circuit_pressurized_low2high Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator deals with the case where the signal general_EV and circuit pressurized sensors information are given. We need this operator to judge where the corrsponding sensors are work.(Low to high)</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.1.2.   <A NAME="_TOC8">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE1">1</A>: Inputs of C10_general_EV_circuit_pressurized_low2high</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">general_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE2">2</A>: Outputs of C10_general_EV_circuit_pressurized_low2high</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<DIV class="Heading4">3.1.1.3.   <A NAME="_TOC9">Locals</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE3">3</A>: Locals of C10_general_EV_circuit_pressurized_low2high</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">general_EV_changed</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.1.4.   <A NAME="_TOC10">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/fd5c/24C0/33D0/624300a620fe">C10_general_EV_circuit_pressurized_low2high</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/fd5c/24C0/33D0/624300a620fe">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Detection<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Failure<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Normal</DIV>
+
+<DIV class="Heading4">3.1.1.5.   <A NAME="_TOC11">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/fd5c/24C0/33D0/624300a620fe'></A><DIV class="Heading5">3.1.1.5.1.   <A NAME="_TOC12">View of C10_general_EV_circuit_pressurized_low2high (C10_general_EV_circuit_pressurized_low2high)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_1_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE1">1</A>: View of C10_general_EV_circuit_pressurized_low2high (C10_general_EV_circuit_pressurized_low2high)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE4">4</A>: State Machines of C10_general_EV_circuit_pressurized_low2high</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE5">5</A>: States of C10_general_EV_circuit_pressurized_low2high</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:Detection</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Failure</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Normal</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE6">6</A>: Transitions of C10_general_EV_circuit_pressurized_low2high</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Normal</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+circuit_pressurized = true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Failure</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+10 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Normal<BR>
+<B>Target:</B><BR>
+SM1:Detection</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+general_EV and general_EV_changed</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/1c9fd/961/2CBC/622f21181607'></A><DIV class="Heading3">3.1.2. <A NAME="_TOC13">C1_open_EV_sensors_door_closed Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.2.1.   <A NAME="_TOC14">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+C1_open_EV_sensors_door_closed Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator deals with the case where the signal open_EV and door closed sensors information are given. We need this operator to judge where the corrsponding sensors are work.</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.2.2.   <A NAME="_TOC15">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE7">7</A>: Inputs of C1_open_EV_sensors_door_closed</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">door_closed_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">open_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE8">8</A>: Outputs of C1_open_EV_sensors_door_closed</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<DIV class="Heading4">3.1.2.3.   <A NAME="_TOC16">Locals</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE9">9</A>: Locals of C1_open_EV_sensors_door_closed</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">any_doors_closed_true</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">open_EV_changed</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.2.4.   <A NAME="_TOC17">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/1c9fe/961/2CBC/622f211831f6">C1_open_EV_sensors_door_closed</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/1c9fe/961/2CBC/622f211831f6">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Detection<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Failure<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Normal</DIV>
+
+<DIV class="Heading4">3.1.2.5.   <A NAME="_TOC18">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/1c9fe/961/2CBC/622f211831f6'></A><DIV class="Heading5">3.1.2.5.1.   <A NAME="_TOC19">View of C1_open_EV_sensors_door_closed (C1_open_EV_sensors_door_closed)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_2_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE2">2</A>: View of C1_open_EV_sensors_door_closed (C1_open_EV_sensors_door_closed)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE10">10</A>: State Machines of C1_open_EV_sensors_door_closed</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE11">11</A>: States of C1_open_EV_sensors_door_closed</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:Detection</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Failure</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Normal</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE12">12</A>: Transitions of C1_open_EV_sensors_door_closed</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Normal</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+any_doors_closed_true = false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Failure</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+7 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Normal<BR>
+<B>Target:</B><BR>
+SM1:Detection</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+open_EV and open_EV_changed</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/a4e2/24C0/33D0/6242f51149b6'></A><DIV class="Heading3">3.1.3. <A NAME="_TOC20">C2_open_EV_sensors_door_opened Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.3.1.   <A NAME="_TOC21">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+C2_open_EV_sensors_door_opened Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator deals with the case where the signal open_EV and door opened sensors information are given. We need this operator to judge where the corrsponding sensors are work.</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.3.2.   <A NAME="_TOC22">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE13">13</A>: Inputs of C2_open_EV_sensors_door_opened</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">door_opened_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_opened_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_opened_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">open_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE14">14</A>: Outputs of C2_open_EV_sensors_door_opened</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<DIV class="Heading4">3.1.3.3.   <A NAME="_TOC23">Locals</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE15">15</A>: Locals of C2_open_EV_sensors_door_opened</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">all_doors_opened_true</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">open_EV_changed</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.3.4.   <A NAME="_TOC24">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/a4f6/24C0/33D0/6242f5115302">C2_open_EV_sensors_door_opened</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/a4f6/24C0/33D0/6242f5115302">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Detection<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Failure<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Normal</DIV>
+
+<DIV class="Heading4">3.1.3.5.   <A NAME="_TOC25">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/a4f6/24C0/33D0/6242f5115302'></A><DIV class="Heading5">3.1.3.5.1.   <A NAME="_TOC26">View of C2_open_EV_sensors_door_opened (C2_open_EV_sensors_door_opened)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_3_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE3">3</A>: View of C2_open_EV_sensors_door_opened (C2_open_EV_sensors_door_opened)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE16">16</A>: State Machines of C2_open_EV_sensors_door_opened</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE17">17</A>: States of C2_open_EV_sensors_door_opened</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:Detection</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Failure</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Normal</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE18">18</A>: Transitions of C2_open_EV_sensors_door_opened</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Normal</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+all_doors_opened_true = true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Failure</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+7 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Normal<BR>
+<B>Target:</B><BR>
+SM1:Detection</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+open_EV and open_EV_changed</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/a5b2/24C0/33D0/6242f63c1dab'></A><DIV class="Heading3">3.1.4. <A NAME="_TOC27">C3_close_EV_sensors_door_closed Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.4.1.   <A NAME="_TOC28">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+C3_close_EV_sensors_door_closed Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator deals with the case where the signal close_EV and door closed sensors information are given. We need this operator to judge where the corrsponding sensors are work.</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.4.2.   <A NAME="_TOC29">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE19">19</A>: Inputs of C3_close_EV_sensors_door_closed</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">door_closed_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">close_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE20">20</A>: Outputs of C3_close_EV_sensors_door_closed</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<DIV class="Heading4">3.1.4.3.   <A NAME="_TOC30">Locals</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE21">21</A>: Locals of C3_close_EV_sensors_door_closed</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">all_doors_closed_true</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">close_EV_changed</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.4.4.   <A NAME="_TOC31">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/a5c6/24C0/33D0/6242f63c3c4d">C3_close_EV_sensors_door_closed</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/a5c6/24C0/33D0/6242f63c3c4d">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Detection<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Failure<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Normal</DIV>
+
+<DIV class="Heading4">3.1.4.5.   <A NAME="_TOC32">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/a5c6/24C0/33D0/6242f63c3c4d'></A><DIV class="Heading5">3.1.4.5.1.   <A NAME="_TOC33">View of C3_close_EV_sensors_door_closed (C3_close_EV_sensors_door_closed)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_4_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE4">4</A>: View of C3_close_EV_sensors_door_closed (C3_close_EV_sensors_door_closed)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE22">22</A>: State Machines of C3_close_EV_sensors_door_closed</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE23">23</A>: States of C3_close_EV_sensors_door_closed</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:Detection</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Failure</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Normal</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE24">24</A>: Transitions of C3_close_EV_sensors_door_closed</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Normal</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+all_doors_closed_true = true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Failure</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+7 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Normal<BR>
+<B>Target:</B><BR>
+SM1:Detection</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+close_EV and close_EV_changed</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/a6a7/24C0/33D0/6242f7617c8b'></A><DIV class="Heading3">3.1.5. <A NAME="_TOC34">C4_close_EV_sensors_door_opened Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.5.1.   <A NAME="_TOC35">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+C4_close_EV_sensors_door_opened Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator deals with the case where the signal close_EV and door opened sensors information are given. We need this operator to judge where the corrsponding sensors are work.</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.5.2.   <A NAME="_TOC36">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE25">25</A>: Inputs of C4_close_EV_sensors_door_opened</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">door_opened_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_opened_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_opened_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">close_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE26">26</A>: Outputs of C4_close_EV_sensors_door_opened</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<DIV class="Heading4">3.1.5.3.   <A NAME="_TOC37">Locals</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE27">27</A>: Locals of C4_close_EV_sensors_door_opened</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">any_door_opened_true</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">close_EV_changed</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.5.4.   <A NAME="_TOC38">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/a6bb/24C0/33D0/6242f761658f">C4_close_EV_sensors_door_opened</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/a6bb/24C0/33D0/6242f761658f">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Detection<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Failure<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Normal</DIV>
+
+<DIV class="Heading4">3.1.5.5.   <A NAME="_TOC39">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/a6bb/24C0/33D0/6242f761658f'></A><DIV class="Heading5">3.1.5.5.1.   <A NAME="_TOC40">View of C4_close_EV_sensors_door_opened (C4_close_EV_sensors_door_opened)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_5_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE5">5</A>: View of C4_close_EV_sensors_door_opened (C4_close_EV_sensors_door_opened)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE28">28</A>: State Machines of C4_close_EV_sensors_door_opened</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE29">29</A>: States of C4_close_EV_sensors_door_opened</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:Detection</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Failure</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Normal</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE30">30</A>: Transitions of C4_close_EV_sensors_door_opened</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Normal</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+any_door_opened_true = false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Failure</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+7 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Normal<BR>
+<B>Target:</B><BR>
+SM1:Detection</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+close_EV and close_EV_changed</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/a771/24C0/33D0/6242f8631037'></A><DIV class="Heading3">3.1.6. <A NAME="_TOC41">C5_extend_EV_sensors_gear_retracted Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.6.1.   <A NAME="_TOC42">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+C5_extend_EV_sensors_gear_retracted Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator deals with the case where the signal extend_EV and gear retracted sensors information are given. We need this operator to judge where the corrsponding sensors are work.</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.6.2.   <A NAME="_TOC43">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE31">31</A>: Inputs of C5_extend_EV_sensors_gear_retracted</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">gear_retracted_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">extend_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE32">32</A>: Outputs of C5_extend_EV_sensors_gear_retracted</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<DIV class="Heading4">3.1.6.3.   <A NAME="_TOC44">Locals</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE33">33</A>: Locals of C5_extend_EV_sensors_gear_retracted</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">any_gear_retracted_true</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">extend_EV_changed</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.6.4.   <A NAME="_TOC45">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/a785/24C0/33D0/6242f8636e14">C5_extend_EV_sensors_gear_retracted</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/a785/24C0/33D0/6242f8636e14">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Detection<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Failure<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Normal</DIV>
+
+<DIV class="Heading4">3.1.6.5.   <A NAME="_TOC46">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/a785/24C0/33D0/6242f8636e14'></A><DIV class="Heading5">3.1.6.5.1.   <A NAME="_TOC47">View of C5_extend_EV_sensors_gear_retracted (C5_extend_EV_sensors_gear_retracted)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_6_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE6">6</A>: View of C5_extend_EV_sensors_gear_retracted (C5_extend_EV_sensors_gear_retracted)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE34">34</A>: State Machines of C5_extend_EV_sensors_gear_retracted</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE35">35</A>: States of C5_extend_EV_sensors_gear_retracted</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:Detection</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Failure</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Normal</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE36">36</A>: Transitions of C5_extend_EV_sensors_gear_retracted</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Normal</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+any_gear_retracted_true = false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Failure</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+7 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Normal<BR>
+<B>Target:</B><BR>
+SM1:Detection</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+extend_EV and extend_EV_changed</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/f9e8/24C0/33D0/6242fba2723a'></A><DIV class="Heading3">3.1.7. <A NAME="_TOC48">C6_extend_EV_sensors_gear_extended Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.7.1.   <A NAME="_TOC49">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+C6_extend_EV_sensors_gear_extended Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator deals with the case where the signal extend_EV and gear extended sensors information are given. We need this operator to judge where the corrsponding sensors are work.</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.7.2.   <A NAME="_TOC50">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE37">37</A>: Inputs of C6_extend_EV_sensors_gear_extended</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">gear_extended_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">extend_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE38">38</A>: Outputs of C6_extend_EV_sensors_gear_extended</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<DIV class="Heading4">3.1.7.3.   <A NAME="_TOC51">Locals</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE39">39</A>: Locals of C6_extend_EV_sensors_gear_extended</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">all_gears_extended_true</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retract_EV_changed</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.7.4.   <A NAME="_TOC52">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/f9fc/24C0/33D0/6242fba213e6">C6_extend_EV_sensors_gear_extended</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/f9fc/24C0/33D0/6242fba213e6">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Detection<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Failure<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Normal</DIV>
+
+<DIV class="Heading4">3.1.7.5.   <A NAME="_TOC53">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/f9fc/24C0/33D0/6242fba213e6'></A><DIV class="Heading5">3.1.7.5.1.   <A NAME="_TOC54">View of C6_extend_EV_sensors_gear_extended (C6_extend_EV_sensors_gear_extended)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_7_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE7">7</A>: View of C6_extend_EV_sensors_gear_extended (C6_extend_EV_sensors_gear_extended)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE40">40</A>: State Machines of C6_extend_EV_sensors_gear_extended</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE41">41</A>: States of C6_extend_EV_sensors_gear_extended</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:Detection</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Failure</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Normal</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE42">42</A>: Transitions of C6_extend_EV_sensors_gear_extended</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Normal</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+all_gears_extended_true = true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Failure</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+7 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Normal<BR>
+<B>Target:</B><BR>
+SM1:Detection</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+extend_EV and retract_EV_changed</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/fab3/24C0/33D0/6242fc28eb0'></A><DIV class="Heading3">3.1.8. <A NAME="_TOC55">C7_retract_EV_sensors_gear_retracted Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.8.1.   <A NAME="_TOC56">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+C7_retract_EV_sensors_gear_retracted Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator deals with the case where the signal retract_EV and gear retracted sensors information are given. We need this operator to judge where the corrsponding sensors are work.</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.8.2.   <A NAME="_TOC57">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE43">43</A>: Inputs of C7_retract_EV_sensors_gear_retracted</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">gear_retracted_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retract_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE44">44</A>: Outputs of C7_retract_EV_sensors_gear_retracted</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<DIV class="Heading4">3.1.8.3.   <A NAME="_TOC58">Locals</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE45">45</A>: Locals of C7_retract_EV_sensors_gear_retracted</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">all_gears_retracted_true</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retract_EV_changed</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.8.4.   <A NAME="_TOC59">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/fac7/24C0/33D0/6242fc285014">C7_retract_EV_sensors_gear_retracted</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/fac7/24C0/33D0/6242fc285014">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Detection<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Failure<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Normal</DIV>
+
+<DIV class="Heading4">3.1.8.5.   <A NAME="_TOC60">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/fac7/24C0/33D0/6242fc285014'></A><DIV class="Heading5">3.1.8.5.1.   <A NAME="_TOC61">View of C7_retract_EV_sensors_gear_retracted (C7_retract_EV_sensors_gear_retracted)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_8_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE8">8</A>: View of C7_retract_EV_sensors_gear_retracted (C7_retract_EV_sensors_gear_retracted)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE46">46</A>: State Machines of C7_retract_EV_sensors_gear_retracted</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE47">47</A>: States of C7_retract_EV_sensors_gear_retracted</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:Detection</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Failure</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Normal</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE48">48</A>: Transitions of C7_retract_EV_sensors_gear_retracted</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Normal</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+all_gears_retracted_true = true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Failure</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+7 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Normal<BR>
+<B>Target:</B><BR>
+SM1:Detection</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+retract_EV and retract_EV_changed</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/fb7b/24C0/33D0/6242fc9f15db'></A><DIV class="Heading3">3.1.9. <A NAME="_TOC62">C8_retract_EV_sensors_gear_extended Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.9.1.   <A NAME="_TOC63">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+C8_retract_EV_sensors_gear_extended Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator deals with the case where the signal retract_EV and gear extended sensors information are given. We need this operator to judge where the corrsponding sensors are work.</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.9.2.   <A NAME="_TOC64">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE49">49</A>: Inputs of C8_retract_EV_sensors_gear_extended</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">gear_extened_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extened_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extened_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retract_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE50">50</A>: Outputs of C8_retract_EV_sensors_gear_extended</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<DIV class="Heading4">3.1.9.3.   <A NAME="_TOC65">Locals</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE51">51</A>: Locals of C8_retract_EV_sensors_gear_extended</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">any_gear_extended_true</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retract_EV_changed</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.9.4.   <A NAME="_TOC66">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/fb8f/24C0/33D0/6242fc9f7a">C8_retract_EV_sensors_gear_extended</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/fb8f/24C0/33D0/6242fc9f7a">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Detection<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Failure<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Normal</DIV>
+
+<DIV class="Heading4">3.1.9.5.   <A NAME="_TOC67">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/fb8f/24C0/33D0/6242fc9f7a'></A><DIV class="Heading5">3.1.9.5.1.   <A NAME="_TOC68">View of C8_retract_EV_sensors_gear_extended (C8_retract_EV_sensors_gear_extended)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_9_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE9">9</A>: View of C8_retract_EV_sensors_gear_extended (C8_retract_EV_sensors_gear_extended)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE52">52</A>: State Machines of C8_retract_EV_sensors_gear_extended</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE53">53</A>: States of C8_retract_EV_sensors_gear_extended</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:Detection</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Failure</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Normal</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE54">54</A>: Transitions of C8_retract_EV_sensors_gear_extended</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Normal</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+any_gear_extended_true = false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Failure</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+7 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Normal<BR>
+<B>Target:</B><BR>
+SM1:Detection</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+retract_EV and retract_EV_changed</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/fc69/24C0/33D0/6242ff575abf'></A><DIV class="Heading3">3.1.10. <A NAME="_TOC69">C9_general_EV_circuit_pressurized_high2low Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.10.1.   <A NAME="_TOC70">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+C9_general_EV_circuit_pressurized_high2low Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator deals with the case where the signal general_EV and circuit pressurized sensors information are given. We need this operator to judge where the corrsponding sensors are work.(high to low)</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.10.2.   <A NAME="_TOC71">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE55">55</A>: Inputs of C9_general_EV_circuit_pressurized_high2low</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">general_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE56">56</A>: Outputs of C9_general_EV_circuit_pressurized_high2low</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<DIV class="Heading4">3.1.10.3.   <A NAME="_TOC72">Locals</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE57">57</A>: Locals of C9_general_EV_circuit_pressurized_high2low</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">general_EV_changed</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.10.4.   <A NAME="_TOC73">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/fc7d/24C0/33D0/6242ff571624">C9_general_EV_circuit_pressurized_high2low</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/fc7d/24C0/33D0/6242ff571624">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Detection<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Failure<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Normal</DIV>
+
+<DIV class="Heading4">3.1.10.5.   <A NAME="_TOC74">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/fc7d/24C0/33D0/6242ff571624'></A><DIV class="Heading5">3.1.10.5.1.   <A NAME="_TOC75">View of C9_general_EV_circuit_pressurized_high2low (C9_general_EV_circuit_pressurized_high2low)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_10_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE10">10</A>: View of C9_general_EV_circuit_pressurized_high2low (C9_general_EV_circuit_pressurized_high2low)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE58">58</A>: State Machines of C9_general_EV_circuit_pressurized_high2low</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE59">59</A>: States of C9_general_EV_circuit_pressurized_high2low</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:Detection</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Failure</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Normal</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE60">60</A>: Transitions of C9_general_EV_circuit_pressurized_high2low</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Normal</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+circuit_pressurized = false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Detection<BR>
+<B>Target:</B><BR>
+SM1:Failure</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+2 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Normal<BR>
+<B>Target:</B><BR>
+SM1:Detection</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+general_EV = false and general_EV_changed</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/9e3ba/961/2CBC/6241b9481386'></A><DIV class="Heading3">3.1.11. <A NAME="_TOC76">Compute_logical Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.11.1.   <A NAME="_TOC77">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+Compute_logical Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator is main logical operator to deal with the run logic and give the information of "Electro-Valve".</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.11.2.   <A NAME="_TOC78">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE61">61</A>: Inputs of Compute_logical</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">door_closed_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">handle</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE62">62</A>: Outputs of Compute_logical</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">gear_locked_down</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gears_maneuvering</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">general_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">open_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">close_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">extend_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retract_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<DIV class="Heading4">3.1.11.3.   <A NAME="_TOC79">Locals</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE63">63</A>: Locals of Compute_logical</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">all_doors_closed_true</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">all_doors_open_true</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">all_gears_absorber</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">all_gears_extended_true</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">all_gears_retracted_true</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">analogical_switch</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.11.4.   <A NAME="_TOC80">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/9e3bb/961/2CBC/6241b94859c6">Compute_logical_1</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/9e3bb/961/2CBC/6241b94859c6">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : all_door_closed<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Close_doors<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : extend_EV_smi<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Extend_gears<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : gears_extended_and_close_doors_smi<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : gears_retract_and_close_doors_smi<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : general_EV_END<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : general_EV_sim<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : general_EV_stop<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : initialization<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Open_door<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : open_EV_smi<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : retract_EV_smi<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Retract_gears</DIV>
+
+<DIV class="Heading4">3.1.11.5.   <A NAME="_TOC81">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/9e3bb/961/2CBC/6241b94859c6'></A><DIV class="Heading5">3.1.11.5.1.   <A NAME="_TOC82">View of Compute_logical_1 (Compute_logical)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_11_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE11">11</A>: View of Compute_logical_1 (Compute_logical)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE64">64</A>: State Machines of Compute_logical_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE65">65</A>: States of Compute_logical_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:all_door_closed</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Close_doors</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:extend_EV_smi</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Extend_gears</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:gears_extended_and_close_doors_smi</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:gears_retract_and_close_doors_smi</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:general_EV_END</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:general_EV_sim</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:general_EV_stop</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:initialization</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Open_door</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:open_EV_smi</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:retract_EV_smi</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Retract_gears</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE66">66</A>: Transitions of Compute_logical_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:all_door_closed<BR>
+<B>Target:</B><BR>
+SM1:general_EV_END</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+1 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Close_doors<BR>
+<B>Target:</B><BR>
+SM1:all_door_closed</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+all_doors_closed_true = true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:extend_EV_smi<BR>
+<B>Target:</B><BR>
+SM1:Extend_gears</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+1 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Extend_gears<BR>
+<B>Target:</B><BR>
+SM1:gears_extended_and_close_doors_smi</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+all_gears_extended_true = true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:gears_extended_and_close_doors_smi<BR>
+<B>Target:</B><BR>
+SM1:Close_doors</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+1 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:gears_retract_and_close_doors_smi<BR>
+<B>Target:</B><BR>
+SM1:Close_doors</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+1 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:general_EV_END<BR>
+<B>Target:</B><BR>
+SM1:general_EV_stop</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+14 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:general_EV_sim<BR>
+<B>Target:</B><BR>
+SM1:initialization</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+analogical_switch = true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:general_EV_sim<BR>
+<B>Target:</B><BR>
+SM1:open_EV_smi</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+2 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:general_EV_stop<BR>
+<B>Target:</B><BR>
+SM1:initialization</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:initialization<BR>
+<B>Target:</B><BR>
+SM1:general_EV_sim</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+analogical_switch = false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Open_door<BR>
+<B>Target:</B><BR>
+SM1:retract_EV_smi</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+handle = true and all_gears_absorber = true and all_doors_open_true = true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Open_door<BR>
+<B>Target:</B><BR>
+SM1:extend_EV_smi</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+handle = false and all_gears_absorber = true and all_doors_open_true = true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:open_EV_smi<BR>
+<B>Target:</B><BR>
+SM1:Open_door</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+1 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:retract_EV_smi<BR>
+<B>Target:</B><BR>
+SM1:Retract_gears</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+1 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retract_gears<BR>
+<B>Target:</B><BR>
+SM1:gears_retract_and_close_doors_smi</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+all_gears_retracted_true = true</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/61ffc/961/2CBC/62385a317d6f'></A><DIV class="Heading3">3.1.12. <A NAME="_TOC83">Handle_control Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.12.1.   <A NAME="_TOC84">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+Handle_control Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator is aim to deal with the handle and automatically control the analogical switch.</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.12.2.   <A NAME="_TOC85">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE67">67</A>: Inputs of Handle_control</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">handle</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE68">68</A>: Outputs of Handle_control</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">analogical_switch</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">true</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<DIV class="Heading4">3.1.12.3.   <A NAME="_TOC86">Locals</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE69">69</A>: Locals of Handle_control</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">handle_state_changed</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.12.4.   <A NAME="_TOC87">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/62010/961/2CBC/62385a317b3e">Handle_control</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/62010/961/2CBC/62385a317b3e">handle_control</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Normal<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Waiting</DIV>
+
+<DIV class="Heading4">3.1.12.5.   <A NAME="_TOC88">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/62010/961/2CBC/62385a317b3e'></A><DIV class="Heading5">3.1.12.5.1.   <A NAME="_TOC89">View of Handle_control (Handle_control)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_12_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE12">12</A>: View of Handle_control (Handle_control)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE70">70</A>: State Machines of Handle_control</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">handle_control</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE71">71</A>: States of Handle_control</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">handle_control:Normal</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">handle_control:Waiting</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE72">72</A>: Transitions of Handle_control</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+handle_control:Normal<BR>
+<B>Target:</B><BR>
+handle_control:Waiting</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+handle_state_changed</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+handle_control:Waiting<BR>
+<B>Target:</B><BR>
+handle_control:Normal</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+20 times true</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/fd9d/24C0/33D0/624301de18f6'></A><DIV class="Heading3">3.1.13. <A NAME="_TOC90">Monitor_system Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.13.1.   <A NAME="_TOC91">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+Monitor_system Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator is to monitor the state of sensors with the help of computing logical outputs. </DIV>
+<BR>
+
+<DIV class="Heading4">3.1.13.2.   <A NAME="_TOC92">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE73">73</A>: Inputs of Monitor_system</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">door_closed_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_opened_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_opened_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_opened_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">general_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">open_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">close_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">extend_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retract_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE74">74</A>: Outputs of Monitor_system</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.13.3.   <A NAME="_TOC93">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/fd9e/24C0/33D0/624301de194c">Monitor_system_1</A></DIV>
+
+<DIV class="Heading4">3.1.13.4.   <A NAME="_TOC94">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/fd9e/24C0/33D0/624301de194c'></A><DIV class="Heading5">3.1.13.4.1.   <A NAME="_TOC95">View of Monitor_system_1 (Monitor_system)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_13_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE13">13</A>: View of Monitor_system_1 (Monitor_system)</DIV>
+
+<A NAME='LinkS-!ed/56b7/5811/1514/6242c94e2c9b'></A><DIV class="Heading3">3.1.14. <A NAME="_TOC96">Sensor_voter_system Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.14.1.   <A NAME="_TOC97">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+Sensor_voter_system Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator is the main voter for the sensors. If the sensors have problem, this system will give the anomaly information.</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.14.2.   <A NAME="_TOC98">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE75">75</A>: Inputs of Sensor_voter_system</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">handle_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">handle_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">handle_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_f1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_f2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_f3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_l1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_l2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_l3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_r1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_r2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_r3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_f1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_f2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_f3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_l1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_l2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_l3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_r1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_r2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_r3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_f1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_f2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_f3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_l1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_l2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_l3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_r1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_r2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_r3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_f1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_f2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_f3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_l2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_l1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_l3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_r1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_r2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_r3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_f1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_f2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_f3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_l1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_l2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_l3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_r1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_r2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_r3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE76">76</A>: Outputs of Sensor_voter_system</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">door_closed_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_opened_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_opened_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_opened_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">handle</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.14.3.   <A NAME="_TOC99">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/56b8/5811/1514/6242c94efb0">Sensor_voter_system_1</A></DIV>
+
+<DIV class="Heading4">3.1.14.4.   <A NAME="_TOC100">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/56b8/5811/1514/6242c94efb0'></A><DIV class="Heading5">3.1.14.4.1.   <A NAME="_TOC101">View of Sensor_voter_system_1 (Sensor_voter_system)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_14_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE14">14</A>: View of Sensor_voter_system_1 (Sensor_voter_system)</DIV>
+
+<A NAME='LinkS-!ed/ff61/24C0/33D0/62430b627951'></A><DIV class="Heading3">3.1.15. <A NAME="_TOC102">System Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.15.1.   <A NAME="_TOC103">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+System Comments: </DIV>
+<DIV class="BodyText" style="">
+Ths main system which contains all information of sensors and other auxiliary sub-systems.</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.15.2.   <A NAME="_TOC104">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE77">77</A>: Inputs of System</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">handle_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">handle_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">handle_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_f1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_f2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_f3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_l1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_l2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_l3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_r1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_r2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_r3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_f1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_f2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_f3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_l1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_l2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_l3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_r1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_r2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_r3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_f1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_f2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_f3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_l1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_l2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_l3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_r1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_r2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_r3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_f1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_f2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_f3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_l2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_l1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_l3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_r1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_r2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_r3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_f1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_f2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_f3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_l1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_l2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_l3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_r1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_r2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_r3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE78">78</A>: Outputs of System</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_locked_down</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gears_maneuvering</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.15.3.   <A NAME="_TOC105">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/ff62/24C0/33D0/62430b62411f">System_1</A></DIV>
+
+<DIV class="Heading4">3.1.15.4.   <A NAME="_TOC106">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/ff62/24C0/33D0/62430b62411f'></A><DIV class="Heading5">3.1.15.4.1.   <A NAME="_TOC107">View of System_1 (System)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_15_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE15">15</A>: View of System_1 (System)</DIV>
+
+<A NAME='LinkS-!ed/525f/5811/1514/6242be451388'></A><DIV class="Heading3">3.1.16. <A NAME="_TOC108">Voter Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.16.1.   <A NAME="_TOC109">Comments and Information</A></DIV>
+
+<DIV class="BodyText" style="font-size: 9pt; font-weight: bold;">
+Voter Comments: </DIV>
+<DIV class="BodyText" style="">
+This operator is a voter system in order to judge the state of sensor and delete the damaged sensor.</DIV>
+<BR>
+
+<DIV class="Heading4">3.1.16.2.   <A NAME="_TOC110">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE79">79</A>: Inputs of Voter</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">sensor_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">sensor_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">sensor_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE80">80</A>: Outputs of Voter</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" colspan="2">Properties</TH>
+<TH class="TableHeadingCell" style="width: 50mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">output</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="" colspan="2">&nbsp;</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">error</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style="width: 15mm;">default</TD>
+<TD class="TableCell" style="width: 25mm;">false</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.16.3.   <A NAME="_TOC111">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/5260/5811/1514/6242be456f98">Voter_1</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/5260/5811/1514/6242be456f98">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : State1<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : State2<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : State3<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : State4<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : State5</DIV>
+
+<DIV class="Heading4">3.1.16.4.   <A NAME="_TOC112">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/5260/5811/1514/6242be456f98'></A><DIV class="Heading5">3.1.16.4.1.   <A NAME="_TOC113">View of Voter_1 (Voter)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Landing_gear_system_img/Figure_16_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE16">16</A>: View of Voter_1 (Voter)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE81">81</A>: State Machines of Voter_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE82">82</A>: States of Voter_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:State1</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:State2</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:State3</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:State4</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:State5</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE83">83</A>: Transitions of Voter_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:State1<BR>
+<B>Target:</B><BR>
+SM1:State2</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+sensor_2 = sensor_3 and sensor_1 &lt;&gt; sensor_2</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:State1<BR>
+<B>Target:</B><BR>
+SM1:State3</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+sensor_1 = sensor_3 and sensor_1 &lt;&gt; sensor_2</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:State1<BR>
+<B>Target:</B><BR>
+SM1:State4</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+sensor_1 = sensor_2 and sensor_1 &lt;&gt; sensor_3</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:State2<BR>
+<B>Target:</B><BR>
+SM1:State5</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+sensor_2 &lt;&gt; sensor_3</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:State3<BR>
+<B>Target:</B><BR>
+SM1:State5</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+sensor_1 &lt;&gt; sensor_3</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:State4<BR>
+<B>Target:</B><BR>
+SM1:State5</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+sensor_2 &lt;&gt; sensor_1</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="EndOfDocument">End of document.</DIV>
+</BODY>
+</HTML>
+

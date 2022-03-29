@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Users/yufei/Desktop/ensta2022/Cours_ROB2021_2022_HU/ROB301/Landing_gear_system/Simulation/scade_model_without_unused.scade"/>
+    <Option name="probes" value="#on#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="debug" value="#on#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="#off#"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="expall" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="target_dir" value="C:/Users/yufei/Desktop/ensta2022/Cours_ROB2021_2022_HU/ROB301/Landing_gear_system/Simulation"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="C2_open_EV_sensors_door_opened"/>
+    <Option name="auth" value="#off#"/>
+    <RootNode headerFile="C2_open_EV_sensors_door_o.h" scadeName="C2_open_EV_sensors_door_opened" targetCycleFct="C2_open_EV_sensors_door_o" targetInitFct="C2_open_EV_sensors_door_o_reset" targetInitializationFct="C2_open_EV_sensors_door_o_init">
+      <Input inCtx="true" scadeName="door_opened_front" scadeType="bool" targetName="door_opened_front" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="door_opened_left" scadeType="bool" targetName="door_opened_left" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="door_opened_right" scadeType="bool" targetName="door_opened_right" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="open_EV" scadeType="bool" targetName="open_EV" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="anomaly" scadeType="bool" targetName="anomaly" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="all_doors_opened_true" scadeType="bool" targetName="all_doors_opened_true" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="open_EV_changed" scadeType="bool" targetName="open_EV_changed" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L4" scadeType="bool" targetName="_L4" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L6" scadeType="bool" targetName="_L6" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L9" scadeType="bool" targetName="_L9" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L14" scadeType="bool" targetName="_L14" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L19" scadeType="bool" targetName="_L19" targetType="kcg_bool"/>
+      <Automaton scadeName="SM1" targetStatesType="SSM_ST_SM1" targetTransitionsType="SSM_TR_SM1">
+        <State scadeName="Normal" targetName="SSM_st_Normal_SM1">
+          <Fork priority="1">
+            <Condition/>
+            <Transition kind="strong" scadeDest="Detection" targetName="SSM_TR_Normal_Detection_1_Normal_SM1"/>
+          </Fork>
+        </State>
+        <State scadeName="Detection" targetName="SSM_st_Detection_SM1">
+          <Fork priority="1">
+            <Condition/>
+            <Transition kind="strong" scadeDest="Normal" targetName="SSM_TR_Detection_Normal_1_Detection_SM1"/>
+          </Fork>
+          <Fork priority="2">
+            <Condition/>
+            <Action>
+              <Times instName="1">
+                <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+                <Memory inCtx="true" targetName="v3_times_1_size" targetType="kcg_size"/>
+              </Times>
+            </Action>
+            <Transition kind="strong" scadeDest="Failure" targetName="SSM_TR_Detection_Failure_2_Detection_SM1"/>
+          </Fork>
+        </State>
+        <State scadeName="Failure" targetName="SSM_st_Failure_SM1">
+          <Local clockVal="SSM_st_Failure_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_Failure_SM1" targetType="kcg_bool"/>
+        </State>
+        <ActiveState inCtx="true" targetName="SM1_state_act"/>
+        <SelectedState inCtx="true" targetName="SM1_state_sel"/>
+        <NextState inCtx="true" mem="true" targetName="SM1_state_nxt"/>
+        <ResetActiveState inCtx="true" mem="true" targetName="SM1_reset_act"/>
+        <ResetNextState inCtx="true" mem="true" targetName="SM1_reset_nxt"/>
+        <StrongTransition inCtx="true" targetName="SM1_fired_strong"/>
+        <WeakTransition inCtx="true" targetName="SM1_fired"/>
+      </Automaton>
+      <FbyOp instName="1">
+        <Init inCtx="true" targetName="init1" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L8" targetType="kcg_bool"/>
+      </FbyOp>
+      <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+      <Init inCtx="true" targetName="init1" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="v3_times_1_size" targetType="kcg_size"/>
+      <Memory inCtx="true" targetName="SM1_state_nxt" targetType="SSM_ST_SM1"/>
+      <Memory inCtx="true" targetName="_L8" targetType="kcg_bool"/>
+      <Clock inCtx="true" targetName="SM1_state_sel" targetType="SSM_ST_SM1"/>
+      <Clock inCtx="true" targetName="SM1_state_act" targetType="SSM_ST_SM1"/>
+      <OutCtxType targetName="outC_C2_open_EV_sensors_door_o"/>
+      <InCtxType targetName="inC_C2_open_EV_sensors_door_o"/>
+    </RootNode>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

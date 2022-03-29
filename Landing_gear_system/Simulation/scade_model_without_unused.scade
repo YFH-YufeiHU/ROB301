@@ -1,0 +1,417 @@
+
+-- This operator deals with the case where the signal open_EV and door opened sensors information are given. We need this operator to judge where the corrsponding sensors are work.
+node #pragma ed <Operator oid="!ed/a4e2/24C0/33D0/6242f51149b6">
+	<diagrams>
+		<NetDiagram name="C2_open_EV_sensors_door_opened" landscape="true" format="A4 (210 297)" oid="!ed/a4f6/24C0/33D0/6242f5115302">
+			<presentationElements>
+				<EquationGE presentable="!ed/a4e3/24C0/33D0/6242f5114ccc">
+					<position>
+						<Point x="4577" y="1720"/>
+					</position>
+					<size>
+						<Size width="265" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/a4e4/24C0/33D0/6242f511198e">
+					<position>
+						<Point x="4524" y="3122"/>
+					</position>
+					<size>
+						<Size width="265" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/a4e5/24C0/33D0/6242f51160a7">
+					<position>
+						<Point x="4551" y="4471"/>
+					</position>
+					<size>
+						<Size width="264" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/a4e6/24C0/33D0/6242f51134eb">
+					<position>
+						<Point x="14658" y="3096"/>
+					</position>
+					<size>
+						<Size width="317" height="502"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/a4e7/24C0/33D0/6242f5116665">
+					<position>
+						<Point x="4313" y="6694"/>
+					</position>
+					<size>
+						<Size width="264" height="503"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/a4e8/24C0/33D0/6242f511654">
+					<position>
+						<Point x="7038" y="6747"/>
+					</position>
+					<size>
+						<Size width="1005" height="661"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/a4e7/24C0/33D0/6242f5116665" dstEquation="!ed/a4e8/24C0/33D0/6242f511654">
+					<positions>
+						<Point x="4577" y="6959"/>
+						<Point x="5794" y="6959"/>
+						<Point x="5794" y="6959"/>
+						<Point x="7038" y="6959"/>
+					</positions>
+				</Edge>
+				<EquationGE presentable="!ed/a4e9/24C0/33D0/6242f511bde">
+					<position>
+						<Point x="11165" y="6826"/>
+					</position>
+					<size>
+						<Size width="318" height="503"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/a4e8/24C0/33D0/6242f511654" dstEquation="!ed/a4e9/24C0/33D0/6242f511bde">
+					<positions>
+						<Point x="8043" y="7091"/>
+						<Point x="9631" y="7091"/>
+						<Point x="9631" y="7091"/>
+						<Point x="11165" y="7091"/>
+					</positions>
+				</Edge>
+				<StateMachineGE presentable="!ed/a4ea/24C0/33D0/6242f5113ec">
+					<position>
+						<Point x="3334" y="9657"/>
+					</position>
+					<size>
+						<Size width="23442" height="4128"/>
+					</size>
+				</StateMachineGE>
+				<StateGE presentable="!ed/a4eb/24C0/33D0/6242f51117ad">
+					<position>
+						<Point x="3678" y="9869"/>
+					</position>
+					<size>
+						<Size width="4710" height="3598"/>
+					</size>
+				</StateGE>
+				<StateGE presentable="!ed/a4ed/24C0/33D0/6242f5111f69">
+					<position>
+						<Point x="12144" y="9869"/>
+					</position>
+					<size>
+						<Size width="4710" height="3598"/>
+					</size>
+				</StateGE>
+				<StateGE presentable="!ed/a4f0/24C0/33D0/6242f5117b3f">
+					<position>
+						<Point x="20241" y="9948"/>
+					</position>
+					<size>
+						<Size width="4710" height="3598"/>
+					</size>
+				</StateGE>
+				<TransitionGE presentable="!ed/a4ec/24C0/33D0/6242f51166dc">
+					<textAreas>
+						<TextArea text="open_EV and open_EV_changed&##xA;
+         " role="130"/>
+					</textAreas>
+					<positions>
+						<Point x="8387" y="11589"/>
+						<Point x="9631" y="11589"/>
+						<Point x="10874" y="11589"/>
+						<Point x="12144" y="11562"/>
+					</positions>
+					<labelSize>
+						<Size width="5477" height="370"/>
+					</labelSize>
+					<labelPos>
+						<Point x="5662" y="11192"/>
+					</labelPos>
+					<slashPos>
+						<Point x="10345" y="11192"/>
+					</slashPos>
+				</TransitionGE>
+				<TransitionGE presentable="!ed/a4ee/24C0/33D0/6242f511732a">
+					<textAreas>
+						<TextArea text="all_doors_opened_true=true&##xA;
+         &##xA;
+         " role="130"/>
+					</textAreas>
+					<positions>
+						<Point x="12144" y="12277"/>
+						<Point x="10901" y="12277"/>
+						<Point x="9657" y="12277"/>
+						<Point x="8387" y="12224"/>
+					</positions>
+					<labelSize>
+						<Size width="5477" height="370"/>
+					</labelSize>
+					<labelPos>
+						<Point x="5477" y="12277"/>
+					</labelPos>
+					<slashPos>
+						<Point x="10160" y="12277"/>
+					</slashPos>
+				</TransitionGE>
+				<TransitionGE presentable="!ed/a4ef/24C0/33D0/6242f51170a0">
+					<textAreas>
+						<TextArea text="7 times true&##xA;
+         " role="130"/>
+					</textAreas>
+					<positions>
+						<Point x="16854" y="11774"/>
+						<Point x="17965" y="11774"/>
+						<Point x="19076" y="11774"/>
+						<Point x="20241" y="11774"/>
+					</positions>
+					<labelSize>
+						<Size width="4815" height="370"/>
+					</labelSize>
+					<labelPos>
+						<Point x="16377" y="11010"/>
+					</labelPos>
+					<slashPos>
+						<Point x="20399" y="11007"/>
+					</slashPos>
+				</TransitionGE>
+				<EquationGE kind="OBJ_LIT" presentable="!ed/a4f1/24C0/33D0/6242f5114ac8">
+					<position>
+						<Point x="21537" y="11827"/>
+					</position>
+					<size>
+						<Size width="212" height="318"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/a4f4/24C0/33D0/6242f5115fe0">
+					<position>
+						<Point x="5239" y="7541"/>
+					</position>
+					<size>
+						<Size width="1005" height="1005"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/a4e7/24C0/33D0/6242f5116665" dstEquation="!ed/a4f4/24C0/33D0/6242f5115fe0">
+					<positions>
+						<Point x="4577" y="6959"/>
+						<Point x="4895" y="6959"/>
+						<Point x="4895" y="8043"/>
+						<Point x="5239" y="8043"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/a4f4/24C0/33D0/6242f5115fe0" dstEquation="!ed/a4e8/24C0/33D0/6242f511654">
+					<positions>
+						<Point x="6244" y="8043"/>
+						<Point x="6641" y="8043"/>
+						<Point x="6641" y="7197"/>
+						<Point x="7038" y="7197"/>
+					</positions>
+				</Edge>
+				<EquationGE presentable="!ed/a4f2/24C0/33D0/6242f51164ab">
+					<position>
+						<Point x="22728" y="11748"/>
+					</position>
+					<size>
+						<Size width="318" height="503"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/a4f1/24C0/33D0/6242f5114ac8" dstEquation="!ed/a4f2/24C0/33D0/6242f51164ab">
+					<positions>
+						<Point x="21749" y="11986"/>
+						<Point x="22304" y="11986"/>
+						<Point x="22304" y="11986"/>
+						<Point x="22781" y="11986"/>
+					</positions>
+				</Edge>
+				<EquationGE presentable="!ed/a511/24C0/33D0/6242f56a7265">
+					<position>
+						<Point x="12039" y="1296"/>
+					</position>
+					<size>
+						<Size width="1021" height="4170"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/a4e3/24C0/33D0/6242f5114ccc" dstEquation="!ed/a511/24C0/33D0/6242f56a7265">
+					<positions>
+						<Point x="4842" y="1984"/>
+						<Point x="8440" y="1984"/>
+						<Point x="8440" y="2355"/>
+						<Point x="12039" y="2355"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/a4e4/24C0/33D0/6242f511198e" dstEquation="!ed/a511/24C0/33D0/6242f56a7265">
+					<positions>
+						<Point x="4789" y="3387"/>
+						<Point x="8414" y="3387"/>
+						<Point x="8414" y="3387"/>
+						<Point x="12039" y="3387"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/a4e5/24C0/33D0/6242f51160a7" dstEquation="!ed/a511/24C0/33D0/6242f56a7265">
+					<positions>
+						<Point x="4815" y="4736"/>
+						<Point x="8414" y="4736"/>
+						<Point x="8414" y="4445"/>
+						<Point x="12039" y="4445"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/a511/24C0/33D0/6242f56a7265" dstEquation="!ed/a4e6/24C0/33D0/6242f51134eb">
+					<positions>
+						<Point x="13070" y="3387"/>
+						<Point x="13838" y="3387"/>
+						<Point x="13838" y="3387"/>
+						<Point x="14658" y="3387"/>
+					</positions>
+				</Edge>
+			</presentationElements>
+		</NetDiagram>
+	</diagrams>
+</Operator>
+#end
+
+C2_open_EV_sensors_door_opened(
+      #pragma ed    <Variable oid="!ed/a501/24C0/33D0/6242f511448c"/>
+#end
+
+door_opened_front : bool; 
+      #pragma ed    <Variable oid="!ed/a502/24C0/33D0/6242f51169d6"/>
+#end
+
+door_opened_left : bool; 
+      #pragma ed    <Variable oid="!ed/a503/24C0/33D0/6242f5117b94"/>
+#end
+
+door_opened_right : bool; 
+      #pragma ed    <Variable oid="!ed/a504/24C0/33D0/6242f51129b6"/>
+#end
+
+open_EV : bool)
+returns (
+      #pragma ed    <Variable oid="!ed/a500/24C0/33D0/6242f511492a"/>
+#end
+
+anomaly : bool default = false)
+var
+      #pragma ed    <Variable oid="!ed/a4fe/24C0/33D0/6242f51146a3"/>
+#end
+
+all_doors_opened_true : bool default = true;
+      #pragma ed    <Variable oid="!ed/a4ff/24C0/33D0/6242f51179ee"/>
+#end
+
+open_EV_changed : bool default = false;
+      #pragma ed    <Variable oid="!ed/a4f7/24C0/33D0/6242f51169d1"/>
+#end
+
+_L4 : bool;
+      #pragma ed    <Variable oid="!ed/a4f8/24C0/33D0/6242f51137fe"/>
+#end
+
+_L5 : bool;
+      #pragma ed    <Variable oid="!ed/a4f9/24C0/33D0/6242f511441d"/>
+#end
+
+_L6 : bool;
+      #pragma ed    <Variable oid="!ed/a4fa/24C0/33D0/6242f511707f"/>
+#end
+
+_L8 : bool;
+      #pragma ed    <Variable oid="!ed/a4fb/24C0/33D0/6242f5111b0a"/>
+#end
+
+_L9 : bool;
+      #pragma ed    <Variable oid="!ed/a4fc/24C0/33D0/6242f5116685"/>
+#end
+
+_L14 : bool;
+      #pragma ed    <Variable oid="!ed/a512/24C0/33D0/6242f56a50f3"/>
+#end
+
+_L19 : bool;
+let
+   #pragma ed    <Equation oid="!ed/a4e3/24C0/33D0/6242f5114ccc"/>
+#end
+
+   _L4 = door_opened_front;
+   #pragma ed    <Equation oid="!ed/a4e4/24C0/33D0/6242f511198e"/>
+#end
+
+   _L5 = door_opened_left;
+   #pragma ed    <Equation oid="!ed/a4e5/24C0/33D0/6242f51160a7"/>
+#end
+
+   _L6 = door_opened_right;
+   #pragma ed    <Equation oid="!ed/a4e6/24C0/33D0/6242f51134eb"/>
+#end
+
+   all_doors_opened_true = _L19;
+   #pragma ed    <Equation oid="!ed/a4e7/24C0/33D0/6242f5116665"/>
+#end
+
+   _L8 = open_EV;
+   #pragma ed    <Equation oid="!ed/a4e8/24C0/33D0/6242f511654"/>
+#end
+
+   _L9 = _L8 #1  <> _L14;
+   #pragma ed    <Equation oid="!ed/a4e9/24C0/33D0/6242f511bde"/>
+#end
+
+   open_EV_changed = _L9;
+   #pragma ed    <StateMachine oid="!ed/a4ea/24C0/33D0/6242f5113ec"/>
+#end
+
+   automaton SM1
+      initial       #pragma ed       <State oid="!ed/a4eb/24C0/33D0/6242f51117ad"/>
+#end
+
+state Normal
+      unless
+         #pragma ed          <Transition oid="!ed/a4ec/24C0/33D0/6242f51166dc"/>
+#end
+
+         if open_EV #1  and open_EV_changed
+            restart Detection;
+
+            #pragma ed       <State oid="!ed/a4ed/24C0/33D0/6242f5111f69"/>
+#end
+
+state Detection
+      unless
+         #pragma ed          <Transition oid="!ed/a4ee/24C0/33D0/6242f511732a"/>
+#end
+
+         if all_doors_opened_true #2  = true
+            restart Normal;
+         #pragma ed          <Transition oid="!ed/a4ef/24C0/33D0/6242f51170a0"/>
+#end
+
+         if 7 #1  times true
+            restart Failure;
+
+            #pragma ed       <State oid="!ed/a4f0/24C0/33D0/6242f5117b3f"/>
+#end
+
+state Failure
+      var
+                  #pragma ed          <Variable oid="!ed/a4f3/24C0/33D0/6242f5113978"/>
+#end
+
+_L1 : bool;
+      let
+         #pragma ed          <Equation oid="!ed/a4f1/24C0/33D0/6242f5114ac8"/>
+#end
+
+         _L1 = true;
+         #pragma ed          <Equation oid="!ed/a4f2/24C0/33D0/6242f51164ab"/>
+#end
+
+         anomaly = _L1;
+      tel
+   returns .. ;
+   #pragma ed    <Equation oid="!ed/a4f4/24C0/33D0/6242f5115fe0"/>
+#end
+
+   _L14 =  #1 fby(_L8; 1; false);
+   #pragma ed    <Equation oid="!ed/a511/24C0/33D0/6242f56a7265"/>
+#end
+
+   _L19 = _L4 #1  and _L5 and _L6;
+tel
+

@@ -1,0 +1,10 @@
+*** Instance Name Warning (WA_INSEUS): "AND" is called 2 times with same instance name: 1
+  at path C2_open_EV_sensors_door_opened/
+  at path if open_EV and open_EV_changed
+   restart Detection
+  at path _L19 = _L4 and _L5 and _L6
+*** Instance Name Warning (WA_INSEUS): "AND" is called 2 times with same instance name: 1
+  at path C3_close_EV_sensors_door_closed/
+  at path if close_EV and close_EV_changed
+   restart Detection
+  at path _L19 = _L4 and _L5 and _L6

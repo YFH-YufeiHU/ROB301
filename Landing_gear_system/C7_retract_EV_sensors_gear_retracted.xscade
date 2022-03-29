@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="node" name="C7_retract_EV_sensors_gear_retracted">
+			<inputs>
+				<Variable name="gear_retracted_front">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/fad2/24C0/33D0/6242fc286c08"/>
+					</pragmas>
+				</Variable>
+				<Variable name="gear_retracted_left">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/fad3/24C0/33D0/6242fc28a7d"/>
+					</pragmas>
+				</Variable>
+				<Variable name="gear_retracted_right">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/fad4/24C0/33D0/6242fc282756"/>
+					</pragmas>
+				</Variable>
+				<Variable name="retract_EV">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/fad5/24C0/33D0/6242fc2844e"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="anomaly">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<default>
+						<ConstValue value="false"/>
+					</default>
+					<pragmas>
+						<ed:Variable oid="!ed/fad1/24C0/33D0/6242fc2873fe"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="all_gears_retracted_true">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<default>
+						<ConstValue value="true"/>
+					</default>
+					<pragmas>
+						<ed:Variable oid="!ed/facf/24C0/33D0/6242fc285864"/>
+					</pragmas>
+				</Variable>
+				<Variable name="retract_EV_changed">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<default>
+						<ConstValue value="false"/>
+					</default>
+					<pragmas>
+						<ed:Variable oid="!ed/fad0/24C0/33D0/6242fc281153"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L4">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/fac8/24C0/33D0/6242fc2886d"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L5">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/fac9/24C0/33D0/6242fc2811b3"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L6">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/faca/24C0/33D0/6242fc28315c"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L8">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/facb/24C0/33D0/6242fc2868a2"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L9">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/facc/24C0/33D0/6242fc2865fd"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L14">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/facd/24C0/33D0/6242fc281294"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L19">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/face/24C0/33D0/6242fc28344a"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- _L4 = gear_retracted_front; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L4"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="gear_retracted_front"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fab4/24C0/33D0/6242fc283c33"/>
+					</pragmas>
+				</Equation>
+				<!-- _L5 = gear_retracted_left; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L5"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="gear_retracted_left"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fab5/24C0/33D0/6242fc281757"/>
+					</pragmas>
+				</Equation>
+				<!-- _L6 = gear_retracted_right; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L6"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="gear_retracted_right"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fab6/24C0/33D0/6242fc286e52"/>
+					</pragmas>
+				</Equation>
+				<!-- all_gears_retracted_true = _L19; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="all_gears_retracted_true"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L19"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fab7/24C0/33D0/6242fc2835e0"/>
+					</pragmas>
+				</Equation>
+				<!-- _L8 = retract_EV; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L8"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="retract_EV"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fab8/24C0/33D0/6242fc2828a7"/>
+					</pragmas>
+				</Equation>
+				<!-- _L9 = _L8 <> _L14; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L9"/>
+					</lefts>
+					<right>
+						<!-- _L8 <> _L14 -->
+						<BinaryOp name="1" operator="&lt;&gt;">
+							<operands>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L8"/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L14"/>
+									</path>
+								</IdExpression>
+							</operands>
+						</BinaryOp>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fab9/24C0/33D0/6242fc28272a"/>
+					</pragmas>
+				</Equation>
+				<!-- retract_EV_changed = _L9; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="retract_EV_changed"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L9"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/faba/24C0/33D0/6242fc284d8d"/>
+					</pragmas>
+				</Equation>
+				<StateMachine name="SM1">
+					<states>
+						<State initial="true" name="Normal">
+							<unless>
+								<Transition kind="restart">
+									<target>
+										<StateRef name="Detection"/>
+									</target>
+									<condition>
+										<!-- retract_EV and retract_EV_changed -->
+										<NAryOp name="1" operator="and">
+											<operands>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="retract_EV"/>
+													</path>
+												</IdExpression>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="retract_EV_changed"/>
+													</path>
+												</IdExpression>
+											</operands>
+										</NAryOp>
+									</condition>
+									<pragmas>
+										<ed:Transition oid="!ed/fabd/24C0/33D0/6242fc28705b"/>
+									</pragmas>
+								</Transition>
+							</unless>
+							<pragmas>
+								<ed:State oid="!ed/fabc/24C0/33D0/6242fc28b2a"/>
+							</pragmas>
+						</State>
+						<State name="Detection">
+							<unless>
+								<Transition kind="restart">
+									<target>
+										<StateRef name="Normal"/>
+									</target>
+									<condition>
+										<!-- all_gears_retracted_true = true -->
+										<BinaryOp name="1" operator="=">
+											<operands>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="all_gears_retracted_true"/>
+													</path>
+												</IdExpression>
+												<ConstValue value="true"/>
+											</operands>
+										</BinaryOp>
+									</condition>
+									<pragmas>
+										<ed:Transition oid="!ed/fabf/24C0/33D0/6242fc282cff"/>
+									</pragmas>
+								</Transition>
+								<Transition kind="restart">
+									<target>
+										<StateRef name="Failure"/>
+									</target>
+									<condition>
+										<!-- 7 times true -->
+										<BinaryOp name="1" operator="times">
+											<operands>
+												<ConstValue value="7"/>
+												<ConstValue value="true"/>
+											</operands>
+										</BinaryOp>
+									</condition>
+									<pragmas>
+										<ed:Transition oid="!ed/fac0/24C0/33D0/6242fc282119"/>
+									</pragmas>
+								</Transition>
+							</unless>
+							<pragmas>
+								<ed:State oid="!ed/fabe/24C0/33D0/6242fc282206"/>
+							</pragmas>
+						</State>
+						<State name="Failure">
+							<locals>
+								<Variable name="_L1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Variable oid="!ed/fac4/24C0/33D0/6242fc283dbc"/>
+									</pragmas>
+								</Variable>
+							</locals>
+							<data>
+								<!-- _L1 = true; -->
+								<Equation>
+									<lefts>
+										<VariableRef name="_L1"/>
+									</lefts>
+									<right>
+										<ConstValue value="true"/>
+									</right>
+									<pragmas>
+										<ed:Equation oid="!ed/fac2/24C0/33D0/6242fc284b96"/>
+									</pragmas>
+								</Equation>
+								<!-- anomaly = _L1; -->
+								<Equation>
+									<lefts>
+										<VariableRef name="anomaly"/>
+									</lefts>
+									<right>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L1"/>
+											</path>
+										</IdExpression>
+									</right>
+									<pragmas>
+										<ed:Equation oid="!ed/fac3/24C0/33D0/6242fc2865ec"/>
+									</pragmas>
+								</Equation>
+							</data>
+							<pragmas>
+								<ed:State oid="!ed/fac1/24C0/33D0/6242fc2866e8"/>
+							</pragmas>
+						</State>
+					</states>
+					<pragmas>
+						<ed:StateMachine oid="!ed/fabb/24C0/33D0/6242fc284152"/>
+					</pragmas>
+				</StateMachine>
+				<!-- _L14 = fby(_L8; 1; false); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L14"/>
+					</lefts>
+					<right>
+						<!-- fby(_L8; 1; false) -->
+						<FbyOp name="1">
+							<flows>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L8"/>
+									</path>
+								</IdExpression>
+							</flows>
+							<delay>
+								<ConstValue value="1"/>
+							</delay>
+							<values>
+								<ConstValue value="false"/>
+							</values>
+						</FbyOp>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fac5/24C0/33D0/6242fc28205"/>
+					</pragmas>
+				</Equation>
+				<!-- _L19 = _L4 and _L5 and _L6; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L19"/>
+					</lefts>
+					<right>
+						<!-- _L4 and _L5 and _L6 -->
+						<NAryOp name="2" operator="and">
+							<operands>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L4"/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L5"/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L6"/>
+									</path>
+								</IdExpression>
+							</operands>
+						</NAryOp>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/fac6/24C0/33D0/6242fc28516e"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/fab3/24C0/33D0/6242fc28eb0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+					<comment>This operator deals with the case where the signal retract_EV and gear retracted sensors information are given. We need this operator to judge where the corrsponding sensors are work.</comment>
+					<diagrams>
+						<NetDiagram name="C7_retract_EV_sensors_gear_retracted" landscape="true" format="A4 (210 297)" oid="!ed/fac7/24C0/33D0/6242fc285014">
+							<presentationElements>
+								<EquationGE presentable="!ed/fab4/24C0/33D0/6242fc283c33">
+									<position>
+										<Point x="4577" y="1720"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/fab5/24C0/33D0/6242fc281757">
+									<position>
+										<Point x="4524" y="3122"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/fab6/24C0/33D0/6242fc286e52">
+									<position>
+										<Point x="4551" y="4471"/>
+									</position>
+									<size>
+										<Size width="264" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/fab7/24C0/33D0/6242fc2835e0">
+									<position>
+										<Point x="14658" y="3096"/>
+									</position>
+									<size>
+										<Size width="317" height="502"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/fab8/24C0/33D0/6242fc2828a7">
+									<position>
+										<Point x="4313" y="6694"/>
+									</position>
+									<size>
+										<Size width="264" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/fab9/24C0/33D0/6242fc28272a">
+									<position>
+										<Point x="7038" y="6747"/>
+									</position>
+									<size>
+										<Size width="1005" height="661"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fab8/24C0/33D0/6242fc2828a7" dstEquation="!ed/fab9/24C0/33D0/6242fc28272a">
+									<positions>
+										<Point x="4577" y="6959"/>
+										<Point x="5794" y="6959"/>
+										<Point x="5794" y="6959"/>
+										<Point x="7038" y="6959"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/faba/24C0/33D0/6242fc284d8d">
+									<position>
+										<Point x="11165" y="6826"/>
+									</position>
+									<size>
+										<Size width="318" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fab9/24C0/33D0/6242fc28272a" dstEquation="!ed/faba/24C0/33D0/6242fc284d8d">
+									<positions>
+										<Point x="8043" y="7091"/>
+										<Point x="9631" y="7091"/>
+										<Point x="9631" y="7091"/>
+										<Point x="11165" y="7091"/>
+									</positions>
+								</Edge>
+								<StateMachineGE presentable="!ed/fabb/24C0/33D0/6242fc284152">
+									<position>
+										<Point x="3334" y="9657"/>
+									</position>
+									<size>
+										<Size width="23442" height="4128"/>
+									</size>
+								</StateMachineGE>
+								<StateGE presentable="!ed/fabc/24C0/33D0/6242fc28b2a">
+									<position>
+										<Point x="3678" y="9869"/>
+									</position>
+									<size>
+										<Size width="4710" height="3598"/>
+									</size>
+								</StateGE>
+								<StateGE presentable="!ed/fabe/24C0/33D0/6242fc282206">
+									<position>
+										<Point x="12144" y="9869"/>
+									</position>
+									<size>
+										<Size width="4710" height="3598"/>
+									</size>
+								</StateGE>
+								<StateGE presentable="!ed/fac1/24C0/33D0/6242fc2866e8">
+									<position>
+										<Point x="20241" y="9948"/>
+									</position>
+									<size>
+										<Size width="4710" height="3598"/>
+									</size>
+								</StateGE>
+								<TransitionGE presentable="!ed/fabd/24C0/33D0/6242fc28705b">
+									<textAreas>
+										<TextArea text="retract_EV and retract_EV_changed&#xA;
+          " role="130"/>
+									</textAreas>
+									<positions>
+										<Point x="8387" y="11589"/>
+										<Point x="9631" y="11589"/>
+										<Point x="10874" y="11589"/>
+										<Point x="12144" y="11562"/>
+									</positions>
+									<labelSize>
+										<Size width="5477" height="370"/>
+									</labelSize>
+									<labelPos>
+										<Point x="5662" y="11192"/>
+									</labelPos>
+									<slashPos>
+										<Point x="10345" y="11192"/>
+									</slashPos>
+								</TransitionGE>
+								<TransitionGE presentable="!ed/fabf/24C0/33D0/6242fc282cff">
+									<textAreas>
+										<TextArea text="all_gears_retracted_true=true&#xA;
+   &#xA;
+          &#xA;
+          " role="130"/>
+									</textAreas>
+									<positions>
+										<Point x="12144" y="12277"/>
+										<Point x="10901" y="12277"/>
+										<Point x="9657" y="12277"/>
+										<Point x="8387" y="12224"/>
+									</positions>
+									<labelSize>
+										<Size width="5477" height="370"/>
+									</labelSize>
+									<labelPos>
+										<Point x="5477" y="12277"/>
+									</labelPos>
+									<slashPos>
+										<Point x="10160" y="12277"/>
+									</slashPos>
+								</TransitionGE>
+								<TransitionGE presentable="!ed/fac0/24C0/33D0/6242fc282119">
+									<textAreas>
+										<TextArea text="7 times true&#xA;
+          " role="130"/>
+									</textAreas>
+									<positions>
+										<Point x="16854" y="11774"/>
+										<Point x="17965" y="11774"/>
+										<Point x="19076" y="11774"/>
+										<Point x="20241" y="11774"/>
+									</positions>
+									<labelSize>
+										<Size width="4815" height="370"/>
+									</labelSize>
+									<labelPos>
+										<Point x="16377" y="11010"/>
+									</labelPos>
+									<slashPos>
+										<Point x="20399" y="11007"/>
+									</slashPos>
+								</TransitionGE>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/fac2/24C0/33D0/6242fc284b96">
+									<position>
+										<Point x="21537" y="11827"/>
+									</position>
+									<size>
+										<Size width="212" height="318"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/fac5/24C0/33D0/6242fc28205">
+									<position>
+										<Point x="5239" y="7541"/>
+									</position>
+									<size>
+										<Size width="1005" height="1005"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fab8/24C0/33D0/6242fc2828a7" dstEquation="!ed/fac5/24C0/33D0/6242fc28205">
+									<positions>
+										<Point x="4577" y="6959"/>
+										<Point x="4895" y="6959"/>
+										<Point x="4895" y="8043"/>
+										<Point x="5239" y="8043"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/fac5/24C0/33D0/6242fc28205" dstEquation="!ed/fab9/24C0/33D0/6242fc28272a">
+									<positions>
+										<Point x="6244" y="8043"/>
+										<Point x="6641" y="8043"/>
+										<Point x="6641" y="7197"/>
+										<Point x="7038" y="7197"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/fac3/24C0/33D0/6242fc2865ec">
+									<position>
+										<Point x="22728" y="11748"/>
+									</position>
+									<size>
+										<Size width="318" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fac2/24C0/33D0/6242fc284b96" dstEquation="!ed/fac3/24C0/33D0/6242fc2865ec">
+									<positions>
+										<Point x="21749" y="11986"/>
+										<Point x="22304" y="11986"/>
+										<Point x="22304" y="11986"/>
+										<Point x="22781" y="11986"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/fac6/24C0/33D0/6242fc28516e">
+									<position>
+										<Point x="11880" y="1191"/>
+									</position>
+									<size>
+										<Size width="1021" height="4408"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fab4/24C0/33D0/6242fc283c33" dstEquation="!ed/fac6/24C0/33D0/6242fc28516e">
+									<positions>
+										<Point x="4842" y="1984"/>
+										<Point x="8361" y="1984"/>
+										<Point x="8361" y="2302"/>
+										<Point x="11880" y="2302"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/fab5/24C0/33D0/6242fc281757" dstEquation="!ed/fac6/24C0/33D0/6242fc28516e">
+									<positions>
+										<Point x="4789" y="3387"/>
+										<Point x="8334" y="3387"/>
+										<Point x="8334" y="3387"/>
+										<Point x="11880" y="3387"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/fab6/24C0/33D0/6242fc286e52" dstEquation="!ed/fac6/24C0/33D0/6242fc28516e">
+									<positions>
+										<Point x="4815" y="4736"/>
+										<Point x="8334" y="4736"/>
+										<Point x="8334" y="4498"/>
+										<Point x="11880" y="4498"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/fac6/24C0/33D0/6242fc28516e" dstEquation="!ed/fab7/24C0/33D0/6242fc2835e0">
+									<positions>
+										<Point x="12912" y="3413"/>
+										<Point x="13758" y="3413"/>
+										<Point x="13758" y="3360"/>
+										<Point x="14658" y="3360"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>
